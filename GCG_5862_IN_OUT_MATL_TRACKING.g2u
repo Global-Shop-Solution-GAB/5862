@@ -1,0 +1,2768 @@
+﻿Program.Sub.ScreenSU.Start
+Gui.FrmExpMgmt..Create
+Gui.FrmExpMgmt..Caption("Exposure Managment Grid")
+Gui.FrmExpMgmt..Size(15240,10440)
+Gui.FrmExpMgmt..MinX(15240)
+Gui.FrmExpMgmt..MinY(10440)
+Gui.FrmExpMgmt..Position(0,0)
+Gui.FrmExpMgmt..BackColor(-2147483633)
+Gui.FrmExpMgmt..MousePointer(0)
+Gui.FrmExpMgmt..Event(UnLoad,FrmExposeMgmt_UnLoad)
+Gui.FrmExpMgmt.GsGcExpMgmt.Create(GsGridControl)
+Gui.FrmExpMgmt.GsGcExpMgmt.Size(15150,8925)
+Gui.FrmExpMgmt.GsGcExpMgmt.Position(0,1230)
+Gui.FrmExpMgmt.GsGcExpMgmt.Anchor(15)
+Gui.FrmExpMgmt.picGSSLogo.Create(PictureBox)
+Gui.FrmExpMgmt.picGSSLogo.Size(4200,1005)
+Gui.FrmExpMgmt.picGSSLogo.Position(4875,135)
+Gui.FrmExpMgmt.cmdUpload.Create(Button)
+Gui.FrmExpMgmt.cmdUpload.Size(1260,375)
+Gui.FrmExpMgmt.cmdUpload.Position(13860,825)
+Gui.FrmExpMgmt.cmdUpload.Caption("Upload Time")
+Gui.FrmExpMgmt.cmdUpload.Event(Click,cmdUpload_Click)
+Gui.FrmExpMgmt.cmdUpload.Anchor(9)
+Gui.FrmExpMgmt.lbl1.Create(Label,"Loading Data........",True,1935,255,0,45,105,True,0,"Arial",8,-2147483633,0)
+Gui.FrmExpMgmt.cmdUploadPart.Create(Button)
+Gui.FrmExpMgmt.cmdUploadPart.Size(1260,375)
+Gui.FrmExpMgmt.cmdUploadPart.Position(13860,420)
+Gui.FrmExpMgmt.cmdUploadPart.Anchor(9)
+Gui.FrmExpMgmt.cmdUploadPart.Caption("Upload Parts")
+Gui.FrmExpMgmt.cmdUploadPart.Event(Click,cmdUploadPart_Click)
+Gui.FrmManExp..Create
+Gui.FrmManExp..Size(15240,10440)
+Gui.FrmManExp..MinX(15240)
+Gui.FrmManExp..MinY(10440)
+Gui.FrmManExp..Position(0,0)
+Gui.FrmManExp..BackColor(-2147483633)
+Gui.FrmManExp..MousePointer(0)
+Gui.FrmManExp..Caption("Manual Exposure Time")
+Gui.FrmManExp..Event(UnLoad,FrmManExp_UnLoad)
+Gui.FrmManExp.GsGcManExp.Create(GsGridControl)
+Gui.FrmManExp.GsGcManExp.Size(15150,8925)
+Gui.FrmManExp.GsGcManExp.Position(0,1230)
+Gui.FrmManExp.GsGcManExp.Anchor(15)
+Gui.FrmManExp.picGSSLogo.Create(PictureBox)
+Gui.FrmManExp.picGSSLogo.Size(4200,1005)
+Gui.FrmManExp.picGSSLogo.Position(4875,135)
+Gui.FrmManExp.picGSSLogo.Anchor(1)
+Gui.FrmManExp.cmdSave.Create(Button)
+Gui.FrmManExp.cmdSave.Size(855,375)
+Gui.FrmManExp.cmdSave.Position(14265,825)
+Gui.FrmManExp.cmdSave.Caption("Save")
+Gui.FrmManExp.cmdSave.Anchor(9)
+Gui.FrmManExp.cmdSave.Event(Click,cmdSave_Click)
+Gui.FrmManExp.cmdAutoFill.Create(Button)
+Gui.FrmManExp.cmdAutoFill.Size(855,375)
+Gui.FrmManExp.cmdAutoFill.Position(14265,420)
+Gui.FrmManExp.cmdAutoFill.Anchor(9)
+Gui.FrmManExp.cmdAutoFill.Caption("Auto Fill")
+Gui.FrmManExp.cmdAutoFill.Event(Click,cmdAutoFill_Click)
+Gui.FrmCreateKit..Create
+Gui.FrmCreateKit..Size(15240,10440)
+Gui.FrmCreateKit..MinX(15240)
+Gui.FrmCreateKit..MinY(10440)
+Gui.FrmCreateKit..Position(0,0)
+Gui.FrmCreateKit..BackColor(-2147483633)
+Gui.FrmCreateKit..MousePointer(0)
+Gui.FrmCreateKit..Caption("Create")
+Gui.FrmCreateKit..Event(UnLoad,FrmCreateKit_UnLoad)
+Gui.FrmCreateKit.GsGcCreateKit.Create(GsGridControl)
+Gui.FrmCreateKit.GsGcCreateKit.Size(15150,8925)
+Gui.FrmCreateKit.GsGcCreateKit.Position(0,1230)
+Gui.FrmCreateKit.GsGcCreateKit.Anchor(15)
+Gui.FrmCreateKit.picGSSLogo.Create(PictureBox)
+Gui.FrmCreateKit.picGSSLogo.Size(4200,1005)
+Gui.FrmCreateKit.picGSSLogo.Position(4875,135)
+Gui.FrmCreateKit.picGSSLogo.Anchor(1)
+Gui.FrmCreateKit.cmdCreate.Create(Button)
+Gui.FrmCreateKit.cmdCreate.Size(855,375)
+Gui.FrmCreateKit.cmdCreate.Position(14265,825)
+Gui.FrmCreateKit.cmdCreate.Caption("Create Kit")
+Gui.FrmCreateKit.cmdCreate.Anchor(9)
+Gui.FrmCreateKit.cmdCreate.Event(Click,cmdCreate_Click)
+Gui.FrmCreateKit.cmdPrint.Create(Button)
+Gui.FrmCreateKit.cmdPrint.Size(855,375)
+Gui.FrmCreateKit.cmdPrint.Position(14265,420)
+Gui.FrmCreateKit.cmdPrint.Anchor(9)
+Gui.FrmCreateKit.cmdPrint.Caption("Print")
+Gui.FrmCreateKit.cmdPrint.Event(Click,cmdPrint_Click)
+Gui.FrmCuredMatl..Create
+Gui.FrmCuredMatl..Size(15240,10440)
+Gui.FrmCuredMatl..MinX(15240)
+Gui.FrmCuredMatl..MinY(10440)
+Gui.FrmCuredMatl..Position(0,0)
+Gui.FrmCuredMatl..BackColor(-2147483633)
+Gui.FrmCuredMatl..MousePointer(0)
+Gui.FrmCuredMatl..Caption("Cured Material")
+Gui.FrmCuredMatl..Event(UnLoad,FrmCuredMatl_UnLoad)
+Gui.FrmCuredMatl.GsGcCuredMatl.Create(GsGridControl)
+Gui.FrmCuredMatl.GsGcCuredMatl.Size(15150,8925)
+Gui.FrmCuredMatl.GsGcCuredMatl.Position(0,1230)
+Gui.FrmCuredMatl.GsGcCuredMatl.Anchor(15)
+Gui.FrmCuredMatl.GsGcCuredMatl.Event(RowCellClick,GsGcCuredMatl_RowCellClick)
+Gui.FrmCuredMatl.picGSSLogo.Create(PictureBox)
+Gui.FrmCuredMatl.picGSSLogo.Size(4200,1005)
+Gui.FrmCuredMatl.picGSSLogo.Position(4875,135)
+Gui.FrmCuredMatl.picGSSLogo.Anchor(1)
+Gui.FrmAcceptTime..Create
+Gui.FrmAcceptTime..Caption("Accept Out Time")
+Gui.FrmAcceptTime..Size(2655,1440)
+Gui.FrmAcceptTime..MinX(0)
+Gui.FrmAcceptTime..MinY(0)
+Gui.FrmAcceptTime..Position(0,0)
+Gui.FrmAcceptTime..BackColor(-2147483633)
+Gui.FrmAcceptTime..MaxButton(False)
+Gui.FrmAcceptTime..MinButton(False)
+Gui.FrmAcceptTime..MousePointer(0)
+Gui.FrmAcceptTime..Event(UnLoad,FrmAcceptTime_UnLoad)
+Gui.FrmAcceptTime.lbl1OutTIme.Create(Label,"Out TIme",True,795,255,0,105,150,True,0,"Arial",8,-2147483633,0)
+Gui.FrmAcceptTime.txtOT.Create(TextBox,"",True,1215,300,0,120,390,True,0,"Arial",8,-2147483643,1)
+Gui.FrmAcceptTime.txtOT.NumericOnly(1)
+Gui.FrmAcceptTime.cmd1AcceptOT.Create(Button)
+Gui.FrmAcceptTime.cmd1AcceptOT.Size(855,375)
+Gui.FrmAcceptTime.cmd1AcceptOT.Position(1440,345)
+Gui.FrmAcceptTime.cmd1AcceptOT.Caption("Accept")
+Gui.FrmAcceptTime.cmd1AcceptOT.Event(Click,cmd1AcceptOT_Click)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+V.Global.bLoadData.Declare
+V.Global.bUnload.Declare(Boolean,False)
+v.Global.sPORcvr.Declare(String)
+V.Global.bSave.Declare(Boolean,False)
+V.Global.bAcceptTime.Declare(Boolean,False)
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+'Logan Hoover
+'Hooks:
+'	PO Receipt Lot/Ser Screen Script 1 - 16440
+'	PO Receipt Lot Ser Populate Hook - 16400
+'	PO Receipt Populate Hook (To Get Recvr #) - 15020
+'	GUI WO Populate Hook - 15930
+'	GUI Script 1 - 15760
+'	GUI Populate Hook - -15710
+
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	V.Local.bFileExists.Declare
+	V.Local.sGSSLogo.Declare
+	V.Local.sIcon.Declare
+	V.Local.sPONum.Declare
+	V.Local.sTempFile.Declare
+	V.Local.sJob.Declare
+	V.Local.bInSecurityGroup.Declare
+	V.Local.sDate.Declare
+	V.Local.sDateDiff.Declare
+	V.Local.sPart.Declare
+	V.Local.sLoc.Declare
+	V.Local.sSQL.Declare
+	V.Local.sTemp.Declare
+	V.Local.iRet.Declare
+
+	
+	F.Intrinsic.String.Build("{0} {1}",V.Ambient.Date,V.Ambient.Time,V.Local.sDate)
+	F.Intrinsic.Date.DateDiff("n","5/1/2020 6:00:00 AM",V.Local.sDate,V.Local.sDateDiff)
+	F.Intrinsic.Math.Div(V.Local.sDateDiff,60,V.Local.sDateDiff)
+	
+	F.Intrinsic.String.Build("{0}\GAB\GAS\gss2.ico",V.Caller.PluginsDir,v.Local.sIcon)
+	F.Intrinsic.String.Build("{0}\GAB\GAS\GAB_GSS_Logo_Green_Dash.png",V.Caller.PluginsDir,V.Local.sGssLogo)
+	
+	Gui.FrmExpMgmt.picGSSLogo.Picture(V.Local.sGSSLogo)
+	Gui.FrmExpMgmt..Icon(V.Local.sIcon)	
+	Gui.FrmManExp.picGSSLogo.Picture(V.Local.sGSSLogo)
+	Gui.FrmManExp..Icon(V.Local.sIcon)	
+	Gui.FrmCreateKit.picGSSLogo.Picture(V.Local.sGSSLogo)
+	Gui.FrmCreateKit..Icon(v.Local.sIcon)
+	Gui.FrmCuredMatl.picGSSLogo.Picture(v.Local.sGSSLogo)
+	Gui.FrmCuredMatl..Icon(v.Local.sIcon)
+	
+	F.ODBC.Connection!con.OpenCompanyConnection
+	
+	F.Intrinsic.Control.CallSub(CheckTable)
+	F.Intrinsic.Control.CallSub(SetContextMenus)
+
+	F.Intrinsic.Control.SelectCase(v.Caller.Hook)
+		F.Intrinsic.Control.Case(16400)
+		
+			V.Passed.000085.Set("Exposure Time")
+			V.Local.sPart.Set(V.Passed.000001)
+			V.Local.sLoc.Set(V.Passed.000002)
+			'ARC 4912 is where we are storing Allowable OT (Can be changed as needed.)
+			F.Intrinsic.String.Build("SELECT * FROM GAB_4912_USER_FIELDS WHERE PART = '{0}' AND LOCATION = '{1}' AND USER1 <> 0",V.Local.sPart,V.Local.sLoc,v.Local.sSQL)
+			
+			F.Data.DataTable.CreateFromSQL("dtAllow","con",v.Local.sSQL,True)
+			
+			F.Intrinsic.Control.If(v.DataTable.dtAllow.RowCount--,>,-1)
+				F.Intrinsic.String.Build("Part '{0}' is a TATS Material.",V.Local.sPart,v.Local.sTemp)
+				F.Intrinsic.UI.Msgbox(v.Local.sTemp,"TATS Material",V.Local.iRet)	
+			F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.If(V.DataTable.dtAllow.Exists)
+				F.Data.DataTable.Close("dtAllow")
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Case(15710)
+			V.Passed.000016.Set("Cured Matl")
+		F.Intrinsic.Control.Case(16440)
+			V.Global.bUnload.Set(True)
+			F.Intrinsic.Control.CallSub(LoadDtManExpBDF)
+		F.Intrinsic.Control.Case(15760)
+			V.Global.bUnload.Set(True)
+			F.Intrinsic.Control.CallSub(LoadDtCuredMatl)
+		F.Intrinsic.Control.Case(15020)
+			F.Intrinsic.String.Build("{0}\{1}_PORcvr_Temp.txt",V.Caller.LocalGSSTempDir, V.Caller.User, V.Local.sTempFile)
+			F.Intrinsic.File.Exists(V.Local.sTempFile,v.Local.bFileExists)
+			F.Intrinsic.Control.If(V.Local.bFileExists,=,True)
+				F.Intrinsic.File.DeleteFile(V.Local.sTempFile)
+				F.Intrinsic.String.Build("{0}{1}", V.Passed.000010, V.Passed.000153, V.Local.sPONum)
+				F.Intrinsic.File.String2File(V.Local.sTempFile, V.Local.sPONum)
+			F.Intrinsic.Control.Else
+				F.Intrinsic.String.Build("{0}{1}", V.Passed.000010, V.Passed.000153, V.Local.sPONum)
+				F.Intrinsic.File.String2File(V.Local.sTempFile, V.Local.sPONum)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Case(15930)
+			F.Intrinsic.String.Build("{0}\{1}_Job_Temp.txt",V.Caller.LocalGSSTempDir, V.Caller.Terminal, V.Local.sTempFile)
+			F.Intrinsic.File.Exists(v.Local.sTempFile,V.Local.bFileExists)
+			F.Intrinsic.Control.If(V.Local.bFileExists,=,True)
+				F.Intrinsic.File.DeleteFile(v.Local.sTempFile)
+				F.Intrinsic.String.Build("{0}",V.Passed.000003,V.Local.sJob)
+				F.Intrinsic.File.String2File(V.Local.sTempFile,v.Local.sJob)
+			F.Intrinsic.Control.Else
+				F.Intrinsic.String.Build("{0}",V.Passed.000003,V.Local.sJob)
+				F.Intrinsic.File.String2File(V.Local.sTempFile,v.Local.sJob)
+			F.Intrinsic.Control.EndIf		
+		F.Intrinsic.Control.CaseElse
+			F.Global.Security.IsInGroup(V.Caller.User,"TATSUPL",V.Caller.CompanyCode,V.Local.bInSecurityGroup)
+			F.Intrinsic.Control.If(v.Local.bInSecurityGroup.Not)
+				Gui.FrmExpMgmt.cmdUpload.Visible(False)
+				Gui.FrmExpMgmt.cmdUploadPart.Visible(False)
+			F.Intrinsic.Control.EndIf
+			gui.FrmExpMgmt..Show
+			Gui.FrmExpMgmt.lbl1.Visible(True)
+			F.Intrinsic.Control.CallSub(LoaddtExpMgmt)
+		F.Intrinsic.Control.EndSelect
+	
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.Main.End
+
+Program.Sub.FrmExposeMgmt_UnLoad.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+		
+	F.ODBC.Connection!con.Close
+	F.Intrinsic.Control.End
+	
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.FrmExposeMgmt_UnLoad.End
+
+Program.Sub.CheckTable.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	V.Local.sSQL.Declare
+	V.Local.bBin.Declare
+	V.Local.bKit.Declare
+	V.Local.bExp.Declare
+	V.Local.bRpt.Declare
+	
+	F.ODBC.Connection!con.TableExists("GCG_5862_FREEZER_BIN",V.Local.bBin)
+	F.ODBC.Connection!con.TableExists("GCG_5862_KIT_MSTR",V.Local.bKit)
+	F.ODBC.Connection!con.TableExists("GCG_5862_EXP_TIME",V.Local.bExp)
+	F.ODBC.Connection!con.TableExists("GCG_5862_KIT_RPT",V.Local.bRpt)
+	
+	F.Intrinsic.Control.If(V.Local.bBin,=,False)
+		F.ODBC.Connection!con.Execute("CREATE TABLE GCG_5862_FREEZER_BIN (BIN CHAR(6) NOT NULL, LOCATION CHAR(2), IS_FREEZER BIT)")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.If(V.Local.bKit,=,False)
+		F.ODBC.Connection!con.Execute("CREATE TABLE GCG_5862_KIT_MSTR (PART CHAR(20) NOT NULL, LOCATION CHAR(2), LOT CHAR(15) NOT NULL, HEAT CHAR(15), ALLOWABLE_OT NUMERIC(6,2), TOTAL_OT NUMERIC(6,2), PO_RECEIVER CHAR(8), CURED BIT)")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.If(V.Local.bExp,=,False)
+		F.ODBC.Connection!con.Execute("CREATE TABLE GCG_5862_EXP_TIME (PART CHAR(20) NOT NULL, LOCATION CHAR(2), LOT CHAR(15) NOT NULL, HEAT CHAR(15), TRANS_DATETIME DATE, TRANS_ACTION CHAR(10), TRANS_DESCRIPTION CHAR(50), MANUAL_TIME NUMERIC(6,2), ADDED_DATETIME TIME, ADDED_USER CHAR(10))")
+	F.Intrinsic.Control.EndIf	
+	
+	F.Intrinsic.Control.If(V.Local.bRpt,=,False)
+		F.ODBC.Connection!con.Execute("CREATE TABLE GCG_5862_KIT_RPT (RUNID BIGINT, PART CHAR(20) NOT NULL, LOCATION CHAR(2), LOT CHAR(15) NOT NULL, HEAT CHAR(15));")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.CheckTable.End
+
+Program.Sub.LoadDtExpMgmt.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+
+	V.Local.sSQL.Declare
+	
+	F.Intrinsic.Control.If(V.DataTable.dtExpMgmt.Exists)
+		F.Data.DataTable.Close("dtExpMgmt")
+	F.Intrinsic.Control.EndIf
+
+	V.Global.bLoadData.Set(True)
+	
+	F.Data.DataTable.CreateFromSQL("dtExpMgmtTmp","con","SELECT Cast(0 As Bit) As SELECT_PART, RTRIM(B.PART) AS PART, RTRIM(B.LOCATION) AS LOCATION, RTRIM(B.LOT) AS LOT, RTRIM(B.HEAT) AS HEAT, RTRIM(B.SERIAL_NUMBER) AS SERIAL_NUMBER, A.TOTAL_OT, A.ALLOWABLE_OT, A.ALLOWABLE_OT - A.TOTAL_OT AS TIME_LEFT, SUM(B.QUANTITY) AS QUANTITY, CAST(A.CURED AS BIT) AS CURED FROM GCG_5862_KIT_MSTR A LEFT JOIN v_ITEM_MASTER B ON A.PART = B.PART AND A.LOCATION = B.LOCATION AND A.LOT = B.LOT AND A.HEAT = B.HEAT GROUP BY B.PART, B.LOCATION, B.LOT, B.HEAT, B.SERIAL_NUMBER, A.TOTAL_OT, A.ALLOWABLE_OT, A.CURED",True)
+	
+	f.Data.DataView.Create("dtExpMgmtTmp", "dVExpMgmtTmp",22, "Part <> ''", "")
+	f.Data.DataView.ToDataTable("dtExpMgmtTmp", "dVExpMgmtTmp", "dtExpMgmt", True)
+	f.Data.DataView.Close("dtExpMgmtTmp", "dVExpMgmtTmp")
+	
+	
+	F.Data.DataTable.AddTable("dtExpMgmt","dtExpChild")
+	F.Data.DataTable.AddColumn("dtExpMgmt$dtExpChild", "PART", "String")
+	F.Data.DataTable.AddColumn("dtExpMgmt$dtExpChild", "LOCATION", "String")
+	F.Data.DataTable.AddColumn("dtExpMgmt$dtExpChild", "LOT", "String")
+	F.Data.DataTable.AddColumn("dtExpMgmt$dtExpChild", "HEAT", "String")
+	F.Data.DataTable.AddColumn("dtExpMgmt$dtExpChild", "FROM BIN", "String")
+	F.Data.DataTable.AddColumn("dtExpMgmt$dtExpChild", "TO BIN", "String")
+	F.Data.DataTable.AddColumn("dtExpMgmt$dtExpChild", "TIME_OUT", "String")
+	F.Data.DataTable.AddColumn("dtExpMgmt$dtExpChild", "TIME_IN", "String")
+	F.Data.DataTable.AddColumn("dtExpMgmt$dtExpChild", "DESCRIPTION", "String")
+	F.Data.DataTable.AddColumn("dtExpMgmt$dtExpChild", "DATE_ENTERED", "String")
+	F.Data.DataTable.AddColumn("dtExpMgmt$dtExpChild", "TIME", "String")
+	F.Data.DataTable.AddColumn("dtExpMgmt$dtExpChild", "QTY ISSUED", "String")
+	
+	
+	'F.Data.DataTable.AddRelation("dtExpMgmt","Part*!*Location*!*Lot*!*Heat","dtExpMgmt$dtExpChild","Part*!*Location*!*Lot*!*Heat")
+	
+	F.Intrinsic.Control.CallSub(PopulateSubGrid)
+	
+	F.Data.DataTable.AddRelation("dtExpMgmt","PART*!*LOCATION*!*LOT*!*HEAT","dtExpMgmt$dtExpChild","PART*!*LOCATION*!*LOT*!*HEAT")
+	'f.Data.DataTable.AddRelation("dtExpMgmt","PART","dtExpMgmt$dtExpChild","PART","Children")
+	
+	
+	
+	f.Intrinsic.Control.CallSub(LoadExpMgmtGV)
+	F.Intrinsic.Control.CallSub(LoadChildGV)
+	
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.LoadDtExpMgmt.End
+
+Program.Sub.LoadExpMgmtGV.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+
+		
+	Gui.FrmExpMgmt.GsGcExpMgmt.AddGridviewFromDatatable("gvExpMgmt","dtExpMgmt")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SuspendLayout()
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetGridviewProperty("gvExpMgmt","AllowSort",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetGridviewProperty("gvExpMgmt","AllowFilter",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetGridviewProperty("gvExpMgmt","OptionsViewShowGroupPanel",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetGridviewProperty("gvExpMgmt","EnableAppearanceOddRow",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.BestFitColumns("gvExpMgmt")
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","SELECT_PART","Caption","Select")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","SELECT_PART","AllowEdit",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","SELECT_PART","ReadOnly",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","SELECT_PART","HeaderHAlignment","Center")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","SELECT_PART","HeaderFontBold",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","SELECT_PART","MinWidth","85")
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","PART","Caption","Part")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","PART","HeaderHAlignment","Center")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","PART","HeaderFontBold",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","PART","MinWidth","85")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","PART","AllowEdit",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","PART","ReadOnly",True)
+
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","LOCATION","Caption","Location")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","LOCATION","HeaderHAlignment","Center")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","LOCATION","HeaderFontBold",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","LOCATION","MinWidth","85")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","LOCATION","AllowEdit",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","LOCATION","ReadOnly",True)
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","LOT","Caption","Lot")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","LOT","HeaderHAlignment","Center")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","LOT","HeaderFontBold",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","LOT","MinWidth","85")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","LOT","AllowEdit",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","LOT","ReadOnly",True)
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","HEAT","Caption","Heat")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","HEAT","HeaderHAlignment","Center")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","HEAT","HeaderFontBold",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","HEAT","MinWidth","85")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","HEAT","AllowEdit",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","HEAT","ReadOnly",True)
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","SERIAL_NUMBER","Caption","Serial")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","SERIAL_NUMBER","HeaderHAlignment","Center")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","SERIAL_NUMBER","HeaderFontBold",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","SERIAL_NUMBER","MinWidth","85")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","SERIAL_NUMBER","AllowEdit",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","SERIAL_NUMBER","ReadOnly",True)
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","TOTAL_OT","Caption","Total Out Time")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","TOTAL_OT","HeaderHAlignment","Center")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","TOTAL_OT","HeaderFontBold",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","TOTAL_OT","MinWidth","85")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","TOTAL_OT","AllowEdit",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","TOTAL_OT","ReadOnly",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","TOTAL_OT","ReadOnly",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","TOTAL_OT","DisplayCustomNumeric","###,##0.0000")
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","ALLOWABLE_OT","Caption","Allowable OT")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","ALLOWABLE_OT","HeaderHAlignment","Center")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","ALLOWABLE_OT","HeaderFontBold",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","ALLOWABLE_OT","MinWidth","85")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","ALLOWABLE_OT","AllowEdit",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","ALLOWABLE_OT","DisplayCustomNumeric","###,##0.0000")
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","TIME_LEFT","Caption","Time Left")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","TIME_LEFT","HeaderHAlignment","Center")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","TIME_LEFT","HeaderFontBold",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","TIME_LEFT","MinWidth","85")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","TIME_LEFT","AllowEdit",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","TIME_LEFT","ReadOnly",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","TIME_LEFT","DisplayCustomNumeric","###,##0.0000")
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","QUANTITY","Caption","Quantity")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","QUANTITY","HeaderHAlignment","Center")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","QUANTITY","HeaderFontBold",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","QUANTITY","MinWidth","85")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","QUANTITY","AllowEdit",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","QUANTITY","ReadOnly",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","QUANTITY","DisplayCustomNumeric","###,##0.0000")
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","CURED","Caption","Cured")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","CURED","HeaderHAlignment","Center")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","CURED","HeaderFontBold",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","CURED","MinWidth","85")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","CURED","AllowEdit",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","CURED","ReadOnly",True)
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.ResumeLayout()
+	Gui.FrmExpMgmt.lbl1.Visible(False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.MainView("gvExpMgmt")
+
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.LoadExpMgmtGV.End
+
+Program.Sub.SetContextMenus.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+
+	Gui.FrmExpMgmt..ContextMenuCreate("ctxExpMgmt")
+	Gui.FrmExpMgmt.GsGcExpMgmt.ContextMenuAttach("ctxExpMgmt")
+	Gui.FrmExpMgmt..ContextMenuAddItem("ctxExpMgmt","CreateKits", 0, "Create Kits")
+	Gui.FrmExpMgmt..ContextMenuAddItem("ctxExpMgmt","ManExpTime", 0, "Add Manual Exposure Time")
+	Gui.FrmExpMgmt..ContextMenuAddItem("ctxExpMgmt","Refresh", 0, "Refresh")
+	Gui.FrmExpMgmt..ContextMenuAddItem("ctxExpMgmt","Export", 0, "Export")
+	Gui.FrmExpMgmt..ContextMenuAddItem("ctxExpMgmt","Reset", 0, "Reset Columns")
+	Gui.FrmExpMgmt..ContextMenuSetItemEventHandler("ctxExpMgmt","CreateKits","MenuClickKit")
+	Gui.FrmExpMgmt..ContextMenuSetItemEventHandler("ctxExpMgmt","ManExpTime","MenuClickManExp")
+	Gui.FrmExpMgmt..ContextMenuSetItemEventHandler("ctxExpMgmt","Refresh","MenuClickRefreshExp")
+	Gui.FrmExpMgmt..ContextMenuSetItemEventHandler("ctxExpMgmt","Export","MenuClickExportExp")
+	Gui.FrmExpMgmt..ContextMenuSetItemEventHandler("ctxExpMgmt","Reset","MenuClickReset")
+	
+'	Gui.FrmManExp..ContextMenuCreate("ctxManExp")
+'	Gui.FrmManExp.GsGcManExp.ContextMenuAttach("ctxManExp")
+'	Gui.FrmManExp..ContextMenuAddItem("ctxManExp","Refresh", 0, "Refresh")
+'	Gui.FrmManExp..ContextMenuAddItem("ctxManExp","Export", 0, "Export")
+'	Gui.FrmManExp..ContextMenuAddItem("ctxManExp","Reset", 0, "Reset Columns")
+'	Gui.FrmManExp..ContextMenuSetItemEventHandler("ctxManExp","Refresh","MenuClickRefreshMan")
+'	Gui.FrmManExp..ContextMenuSetItemEventHandler("ctxManExp","Export","MenuClickExportMan")
+'	Gui.FrmManExp..ContextMenuSetItemEventHandler("ctxManExp","Reset","MenuClickReset")
+'	
+'	Gui.FrmCreateKit..ContextMenuCreate("ctxCreateKit")
+'	Gui.FrmCreateKit.GsGcCreateKit.ContextMenuAttach("ctxCreateKit")
+'	Gui.FrmCreateKit..ContextMenuAddItem("ctxCreateKit","Refresh", 0, "Refresh")
+'	Gui.FrmCreateKit..ContextMenuAddItem("ctxCreateKit","Export", 0, "Export")
+'	Gui.FrmCreateKit..ContextMenuAddItem("ctxCreateKit","Reset", 0, "Reset Columns")
+'	Gui.FrmCreateKit..ContextMenuSetItemEventHandler("ctxCreateKit","Refresh","MenuClickRefreshKit")
+'	Gui.FrmCreateKit..ContextMenuSetItemEventHandler("ctxCreateKit","Export","MenuClickExportKit")
+'	Gui.FrmCreateKit..ContextMenuSetItemEventHandler("ctxCreateKit","Reset","MenuClickReset")
+'	
+'	Gui.FrmCuredMatl..ContextMenuCreate("ctxCuredMatl")
+'	Gui.FrmCuredMatl.GsGcCuredMatl.ContextMenuAttach("ctxCuredMatl")
+'	Gui.FrmCuredMatl..ContextMenuAddItem("ctxCuredMatl","Refresh", 0, "Refresh")
+'	Gui.FrmCuredMatl..ContextMenuAddItem("ctxCuredMatl","Export", 0, "Export")
+'	Gui.FrmCuredMatl..ContextMenuAddItem("ctxCuredMatl","Reset", 0, "Reset Columns")
+'	Gui.FrmCuredMatl..ContextMenuSetItemEventHandler("ctxCuredMatl","Refresh","MenuClickRefreshCure")
+'	Gui.FrmCuredMatl..ContextMenuSetItemEventHandler("ctxCuredMatl","Export","MenuClickExportCure")
+'	Gui.FrmCuredMatl..ContextMenuSetItemEventHandler("ctxCuredMatl","Reset","MenuClickReset")
+
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.SetContextMenus.End
+
+Program.Sub.MenuClickManExp.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.Enabled(False)
+	Gui.FrmExpMgmt.cmdUpload.Enabled(False)
+	F.Intrinsic.Control.CallSub(LoadDtManExp)
+
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.MenuClickManExp.End
+
+Program.Sub.MenuClickKit.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.Enabled(False)
+	Gui.FrmExpMgmt.cmdUpload.Enabled(False)
+	F.Intrinsic.Control.CallSub(LoadDtCreateKit)
+
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.MenuClickKit.End
+
+Program.Sub.LoadDtManExp.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+
+	Gui.FrmManExp..Show
+	
+	V.Global.bLoadData.Set(True)
+	
+	F.Intrinsic.Control.If(V.DataTable.dtManExp.Exists)
+		F.Data.DataTable.Close("dtManExp")
+	F.Intrinsic.Control.EndIf
+	
+	F.Data.DataView.Create("dtExpMgmt","dvManExp",22,"SELECT_PART = True","")
+	F.Data.DataView.ToDataTableDistinct("dtExpMgmt","dvManExp","dtManExp","PART*!*LOCATION*!*LOT*!*HEAT*!*SERIAL_NUMBER*!*QUANTITY",True)
+	F.Data.DataView.Close("dtExpMgmt","dvManExp")
+
+	F.Data.DataTable.AddColumn("dtManExp","Description",String)
+	F.Data.DataTable.AddColumn("dtManExp","Out_Time",Float,0)
+	
+	F.Intrinsic.Control.CallSub(LoadManExpGV)
+
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.LoadDtManExp.End
+
+Program.Sub.FrmManExp_UnLoad.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	F.Intrinsic.Control.If(V.Global.bUnload,=,True)
+		F.Intrinsic.Control.CallSub(FrmExposeMgmt_Unload)
+	F.Intrinsic.Control.EndIf
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.Enabled(True)
+	Gui.FrmExpMgmt.cmdUpload.Enabled(True)
+	Gui.FrmManExp..Visible(False)
+	
+
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.FrmManExp_UnLoad.End
+
+Program.Sub.LoadManExpGV.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+			
+	Gui.FrmManExp.GsGcManExp.AddGridviewFromDatatable("gvManExp","dtManExp")
+	Gui.FrmManExp.GsGcManExp.SuspendLayout()
+	Gui.FrmManExp.GsGcManExp.SetGridviewProperty("gvManExp","AllowSort",True)
+	Gui.FrmManExp.GsGcManExp.SetGridviewProperty("gvManExp","AllowFilter",True)
+	Gui.FrmManExp.GsGcManExp.SetGridviewProperty("gvManExp","OptionsViewShowGroupPanel",True)
+	Gui.FrmManExp.GsGcManExp.SetGridviewProperty("gvManExp","EnableAppearanceOddRow",True)
+	Gui.FrmManExp.GsGcManExp.BestFitColumns("gvManExp")
+	
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","PART","Caption","Part")
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","PART","HeaderHAlignment","Center")
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","PART","HeaderFontBold",True)
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","PART","MinWidth","85")
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","PART","AllowEdit",False)
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","PART","ReadOnly",True)
+
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","LOCATION","Caption","Location")
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","LOCATION","HeaderHAlignment","Center")
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","LOCATION","HeaderFontBold",True)
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","LOCATION","MinWidth","85")
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","LOCATION","AllowEdit",False)
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","LOCATION","ReadOnly",True)
+	
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","LOT","Caption","Lot")
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","LOT","HeaderHAlignment","Center")
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","LOT","HeaderFontBold",True)
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","LOT","MinWidth","85")
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","LOT","AllowEdit",False)
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","LOT","ReadOnly",True)
+	
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","HEAT","Caption","Heat")
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","HEAT","HeaderHAlignment","Center")
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","HEAT","HeaderFontBold",True)
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","HEAT","MinWidth","85")
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","HEAT","AllowEdit",False)
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","HEAT","ReadOnly",True)
+	
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","SERIAL_NUMBER","Caption","Serial")
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","SERIAL_NUMBER","HeaderHAlignment","Center")
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","SERIAL_NUMBER","HeaderFontBold",True)
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","SERIAL_NUMBER","MinWidth","85")
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","SERIAL_NUMBER","AllowEdit",False)
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","SERIAL_NUMBER","ReadOnly",True)
+	
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","QUANTITY","Caption","Quantity")
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","QUANTITY","HeaderHAlignment","Center")
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","QUANTITY","HeaderFontBold",True)
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","QUANTITY","MinWidth","85")
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","QUANTITY","AllowEdit",False)
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","QUANTITY","ReadOnly",True)
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","QUANTITY","DisplayCustomNumeric","###,##0.00000")
+	'Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvExpMgmt","TIME_LEFT","DisplayCustomNumeric","###,##0.00000")
+	
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","DESCRIPTION","Caption","Description")
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","DESCRIPTION","AllowEdit",True)
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvMAnExp","DESCRIPTION","ReadOnly",False)
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvMAnExp","DESCRIPTION","CellBackColor","LightYellow")
+	
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","OUT_TIME","Caption","Out Time")
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvManExp","OUT_TIME","AllowEdit",True)
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvMAnExp","OUT_TIME","ReadOnly",False)
+	Gui.FrmManExp.GsGcManExp.SetColumnProperty("gvMAnExp","OUT_TIME","CellBackColor","LightYellow")
+	
+	Gui.FrmManExp.GsGcManExp.ResumeLayout()
+	Gui.FrmManExp.GsGcManExp.MainView("gvManExp")
+
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.LoadManExpGV.End
+
+Program.Sub.LoadDtManExpBDF.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	V.Local.bFileExists.Declare
+	V.Local.sTitles.Declare
+	V.Local.iCnt.Declare
+	V.Local.iColumns.Declare
+	V.Local.iRows.Declare
+	V.Local.sDataType.Declare
+	V.Local.sTemp.Declare
+	V.Local.sBDF.Declare
+	V.Local.sPart.Declare
+	V.Local.sLoc.Declare
+	V.Local.sLot.Declare
+	V.Local.sHeat.Declare
+	V.Local.sSerial.Declare
+	V.Local.sTempFile.Declare
+
+	V.Global.bLoadData.Set(True)
+
+	F.Intrinsic.String.Build("{0}\{1}_PORcvr_Temp.txt",V.Caller.LocalGSSTempDir, V.Caller.User, V.Local.sTempFile)
+	
+	F.Intrinsic.File.Exists(V.Local.sTempFile, V.Local.bFileExists)
+	F.Intrinsic.Control.If(V.Local.bFileExists,=,True)
+		F.Intrinsic.File.File2String(V.Local.sTempFile,V.Global.sPORcvr)
+		'F.Intrinsic.File.DeleteFile(V.Local.sTempFile)
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.If(V.DataTable.dtManExp.Exists)
+		F.Data.DataTable.Close("dtManExp")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.BDF.Load("AUX002","AUX002")
+	F.Intrinsic.BDF.ReadColumnTitle("AUX002",V.Local.sTitles)
+
+	F.Intrinsic.BDF.ReadColumnCount("AUX002",V.Local.iColumns)
+	F.Intrinsic.Math.Sub(V.Local.iColumns,1,V.Local.iColumns)
+	F.Intrinsic.Control.For(V.Local.iCnt,0,V.Local.iColumns,1)
+		F.Intrinsic.Control.If(V.Local.iCnt,=,0)
+			V.Local.sDataType.Set("String")
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Build("{0}*!*{1}",V.Local.sDataType,"String",V.Local.sDataType)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+	
+	F.Intrinsic.BDF.ReadRowCount("AUX002",V.Local.iRows)
+	F.Intrinsic.Math.Sub(V.Local.iRows,1,V.Local.iRows)
+	F.Intrinsic.Control.If(V.Local.iRows,<,0)
+		F.Intrinsic.Control.CallSub(FrmExposeMgmt_UnLoad)
+	F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.For(V.Local.iCnt,0,V.Local.iRows,1)
+		F.Intrinsic.BDF.ReadRow("AUX002",V.Local.iCnt,V.Local.sTemp)
+		V.Local.sTemp(0).Set(V.Local.sTemp(0).Trim)
+		F.Intrinsic.String.Join(V.Local.sTemp,"|~|",V.Local.sTemp)
+		F.Intrinsic.String.Replace(V.Local.sTemp,"|~|","*!*",V.Local.sTemp)
+		F.Intrinsic.Control.If(V.Local.iCnt,=,0)
+			V.Local.sBDF.Set(V.Local.sTemp.Trim)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Build("{0}{1}{2}",V.Local.sBDF.Trim,V.Ambient.NewLine,V.Local.sTemp.Trim,V.Local.sBDF)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+	
+	F.Data.DataTable.CreateFromString("dtManExp",V.Local.sBDF,V.Local.sTitles,V.Local.sDataType,"*!*",V.Ambient.NewLine,True)
+	F.Data.DataTable.AddColumn("dtManExp","PART","String")
+	F.Data.DataTable.AddColumn("dtManExp","LOCATION","String")	
+	F.Data.DataTable.AddColumn("dtManExp", "LOT","String")
+	F.Data.DataTable.AddColumn("dtManExp", "HEAT","String")
+	F.Data.DataTable.AddColumn("dtManExp", "SERIAL_NUMBER","String")
+	F.Data.DataTable.AddColumn("dtManExp", "QUANTITY","String")
+	F.Data.DataTable.AddColumn("dtManExp","DESCRIPTION","String")
+	F.Data.DataTable.AddColumn("dtManExp","OUT_TIME","Float")
+	F.Data.DataTable.RemoveColumn("dtManExp","Select")
+	F.Data.DataTable.RemoveColumn("dtManExp","Bin")
+	F.Data.DataTable.RemoveColumn("dtManExp","Link")
+	F.Data.DataTable.RemoveColumn("dtManExp","Pur Qty Recvd")
+	F.Data.DataTable.RemoveColumn("dtManExp","*LENGTH")
+	F.Data.DataTable.RemoveColumn("dtManExp","*LENGTH UM")
+	F.Data.DataTable.RemoveColumn("dtManExp","*WIDTH")
+	F.Data.DataTable.RemoveColumn("dtManExp","*WIDTH UM")
+	
+	V.Local.sPart.Set(V.Passed.000001)
+	V.Local.sLoc.Set(V.Passed.000002)
+	
+	F.Intrinsic.Control.For(v.Local.iCnt,0,V.DataTable.dtManExp.RowCount--,1)
+		V.Local.sLot.Set(v.DataTable.dtManExp(v.Local.iCnt).Lot Number!FieldVal)
+		V.Local.sHeat.Set(v.DataTable.dtManExp(v.Local.iCnt).Heat Number!FieldVal)
+		V.Local.sSerial.Set(v.DataTable.dtManExp(v.Local.iCnt).Serial Number!FieldVal)
+		F.Intrinsic.String.RTrim(v.Local.sLot,v.Local.sLot)
+		F.Intrinsic.String.RTrim(v.Local.sHeat,v.Local.sHeat)
+		F.Intrinsic.String.RTrim(v.Local.sSerial,v.Local.sSerial)
+		f.Data.DataTable.SetValue("dtManExp",v.Local.iCnt,PART,v.Local.sPart)
+		f.Data.DataTable.SetValue("dtManExp",v.Local.iCnt,LOCATION,v.Local.sLoc)
+		f.Data.DataTable.SetValue("dtManExp",v.Local.iCnt,LOT,V.Local.sLot)
+		f.Data.DataTable.SetValue("dtManExp",v.Local.iCnt,HEAT,V.Local.sHeat)
+		f.Data.DataTable.SetValue("dtManExp",v.Local.iCnt,SERIAL_NUMBER,V.Local.sSerial)
+		f.Data.DataTable.SetValue("dtManExp",v.Local.iCnt,QUANTITY,v.DataTable.dtManExp(v.Local.iCnt).Inv Qty Recvd!FieldVal)
+	F.Intrinsic.Control.Next(v.Local.iCnt)
+	
+	F.Data.DataTable.RemoveColumn("dtManExp","Lot Number")
+	F.Data.DataTable.RemoveColumn("dtManExp","Heat Number")
+	F.Data.DataTable.RemoveColumn("dtManExp","Serial Number")
+	F.Data.DataTable.RemoveColumn("dtManExp","Inv Qty Recvd")
+	
+	Gui.FrmManExp..Show
+
+	F.Intrinsic.Control.CallSub(LoadManExpGV)
+
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.LoadDtManExpBDF.End
+
+Program.Sub.cmdSave_Click.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	V.Local.sSQL.Declare
+	V.Local.iCnt.Declare
+	V.Local.iRet.Declare
+	V.Local.sDesc.Declare
+	V.Local.sOutTime.Declare
+	v.Local.sTemp.Declare
+	
+	F.Intrinsic.Control.If(V.Global.bSave,=,False)
+		V.Global.bSave.Set(True)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.UI.Msgbox("Already saved current data.","Abort",v.Local.iRet)
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.For(V.Local.iCnt,0,V.DataTable.dtManExp.RowCount--,1)
+		v.Local.sDesc.Set(V.DataTable.dtManExp(V.Local.iCnt).DESCRIPTION!FieldVal)
+		v.Local.sOutTime.Set(v.DataTable.dtManExp(v.Local.iCnt).OUT_TIME!FieldValFloat)
+		F.Intrinsic.Control.If(v.Local.sDesc,=,"",OR,v.Local.sOutTime,=,"0",v.Local.sOutTime,=,"")
+			F.Intrinsic.UI.Msgbox("Description or Out Time left blank. Continue?","Missing Data",4,V.Local.iRet)
+			F.Intrinsic.Control.If(v.Local.iRet,=,6)
+				F.Intrinsic.Control.If(V.DataTable.dtKitMstr.Exists)
+					F.Data.DataTable.Close("dtKitMstr")
+				F.Intrinsic.Control.EndIf
+				
+				f.Intrinsic.Control.If(V.DataTable.dtAllow.Exists)
+					F.Data.DataTable.Close("dtAllow")
+				f.Intrinsic.Control.EndIf
+				
+				F.Intrinsic.String.Build("SELECT * FROM GCG_5862_KIT_MSTR WHERE PART = '{0}' AND isnull(LOCATION, '') = '{1}' AND LOT = '{2}' AND HEAT = '{3}'", v.DataTable.dtManExp(v.Local.iCnt).PART!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).LOCATION!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).LOT!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).HEAT!FieldVal, v.Local.sSQL)
+				
+				F.Data.DataTable.CreateFromSQL("dtKitMstr","con",V.Local.sSQL,True)
+				
+				'ARC 4912 is where we are storing Allowable OT (Can be changed as needed.)
+				F.Intrinsic.String.Build("SELECT * FROM GAB_4912_USER_FIELDS WHERE PART = '{0}' AND isnull(LOCATION, '') = '{1}' AND USER1 <> 0",v.DataTable.dtManExp(v.Local.iCnt).PART!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).LOCATION!FieldVal,v.Local.sSQL)
+				
+				F.Data.DataTable.CreateFromSQL("dtAllow","con",v.Local.sSQL,True)
+				
+				F.Intrinsic.Control.If(v.DataTable.dtAllow.RowCount--,>,-1)
+					F.Intrinsic.Control.If(v.DataTable.dtKitMstr.RowCount--,>,-1)
+					F.Intrinsic.Control.Else
+						F.Intrinsic.String.Build("INSERT INTO GCG_5862_KIT_MSTR (PART,LOCATION,LOT,HEAT,ALLOWABLE_OT,TOTAL_OT,PO_RECEIVER,CURED) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','0')",v.DataTable.dtManExp(v.Local.iCnt).PART!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).LOCATION!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).LOT!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).HEAT!FieldVal, v.DataTable.dtAllow(0).USER1!FieldValFloat,v.DataTable.dtManExp(V.Local.iCnt).OUT_TIME!FieldValFloat,v.Global.sPORcvr,v.Local.sSQL)
+						F.ODBC.Connection!con.Execute(v.Local.sSQL)
+					F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.Else
+					F.Intrinsic.String.Build("Part '{0}' and Location '{1}' is missing an allowable out time.",v.DataTable.dtManExp(v.Local.iCnt).PART!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).LOCATION!FieldVal,v.Local.sTemp)
+					F.Intrinsic.UI.Msgbox(v.Local.sTemp,"Allowable Out Time",V.Local.iRet)
+					f.Intrinsic.Control.ExitSub
+				F.Intrinsic.Control.EndIf
+				
+				F.Intrinsic.String.Build("INSERT INTO GCG_5862_EXP_TIME (PART, LOCATION, LOT, HEAT, TRANS_DATETIME, TRANS_ACTION ,TRANS_DESCRIPTION, MANUAL_TIME, ADDED_DATETIME, ADDED_USER) VALUES ('{0}','{1}','{2}','{3}',CURDATE(),'MANUAL','{4}','{5}',CURTIME(),'{6}')",v.DataTable.dtManExp(v.Local.iCnt).PART!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).LOCATION!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).LOT!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).HEAT!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).DESCRIPTION!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).OUT_TIME!FieldValFloat,V.Caller.User,V.Local.sSQL)
+				F.ODBC.Connection!con.Execute(v.Local.sSQL)
+			F.Intrinsic.Control.Else
+				V.Global.bSave.Set(False)
+				F.Intrinsic.Control.ExitSub
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Else				
+				F.Intrinsic.Control.If(V.DataTable.dtKitMstr.Exists)
+					F.Data.DataTable.Close("dtKitMstr")
+				F.Intrinsic.Control.EndIf
+				
+				f.Intrinsic.Control.If(V.DataTable.dtAllow.Exists)
+					F.Data.DataTable.Close("dtAllow")
+				f.Intrinsic.Control.EndIf
+				
+				F.Intrinsic.String.Build("SELECT * FROM GCG_5862_KIT_MSTR WHERE PART = '{0}' AND isnull(LOCATION, '') = '{1}' AND LOT = '{2}' AND HEAT = '{3}'", v.DataTable.dtManExp(v.Local.iCnt).PART!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).LOCATION!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).LOT!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).HEAT!FieldVal, v.Local.sSQL)
+				
+				F.Data.DataTable.CreateFromSQL("dtKitMstr","con",V.Local.sSQL,True)
+				
+				'ARC 4912 is where we are storing Allowable OT (Can be changed as needed.)
+				F.Intrinsic.String.Build("SELECT * FROM GAB_4912_USER_FIELDS WHERE PART = '{0}' AND isnull(LOCATION, '') = '{1}' AND USER1 <> 0",v.DataTable.dtManExp(v.Local.iCnt).PART!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).LOCATION!FieldVal,v.Local.sSQL)
+				
+				F.Data.DataTable.CreateFromSQL("dtAllow","con",v.Local.sSQL,True)
+				
+				F.Intrinsic.Control.If(v.DataTable.dtAllow.RowCount--,>,-1)
+					F.Intrinsic.Control.If(v.DataTable.dtKitMstr.RowCount--,>,-1)
+					F.Intrinsic.Control.Else
+						F.Intrinsic.String.Build("INSERT INTO GCG_5862_KIT_MSTR (PART,LOCATION,LOT,HEAT,ALLOWABLE_OT,TOTAL_OT,PO_RECEIVER,CURED) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','0')",v.DataTable.dtManExp(v.Local.iCnt).PART!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).LOCATION!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).LOT!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).HEAT!FieldVal, v.DataTable.dtAllow(0).USER1!FieldValFloat,v.DataTable.dtManExp(V.Local.iCnt).OUT_TIME!FieldValFloat,v.Global.sPORcvr,v.Local.sSQL)
+						F.ODBC.Connection!con.Execute(v.Local.sSQL)
+					F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.Else
+					F.Intrinsic.String.Build("Part '{0}' and Location '{1}' is missing an allowable out time.",v.DataTable.dtManExp(v.Local.iCnt).PART!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).LOCATION!FieldVal,v.Local.sTemp)
+					F.Intrinsic.UI.Msgbox(v.Local.sTemp,"Allowable Out Time",V.Local.iRet)
+					f.Intrinsic.Control.ExitSub
+				F.Intrinsic.Control.EndIf
+				
+				F.Intrinsic.String.Build("INSERT INTO GCG_5862_EXP_TIME (PART, LOCATION, LOT, HEAT, TRANS_DATETIME, TRANS_ACTION ,TRANS_DESCRIPTION, MANUAL_TIME, ADDED_DATETIME, ADDED_USER) VALUES ('{0}','{1}','{2}','{3}',CURDATE(),'MANUAL','{4}','{5}',CURTIME(),'{6}')",v.DataTable.dtManExp(v.Local.iCnt).PART!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).LOCATION!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).LOT!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).HEAT!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).DESCRIPTION!FieldVal,v.DataTable.dtManExp(v.Local.iCnt).OUT_TIME!FieldValFloat,V.Caller.User,V.Local.sSQL)
+				F.ODBC.Connection!con.Execute(v.Local.sSQL)
+		F.Intrinsic.Control.EndIf	
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+
+	F.Intrinsic.UI.Msgbox("Time was Saved!","Complete", V.Local.iRet)
+
+	F.Data.DataTable.Close("dtKitMstr")
+	F.Data.DataTable.Close("dtAllow")
+
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.cmdSave_Click.End
+
+Program.Sub.PopulateSubGrid.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+		
+	V.Local.iCnt.Declare
+	V.Local.iCnt2.Declare
+	V.Local.sSQL.Declare
+	V.Local.sTime.Declare
+	v.Local.sTimeBack.Declare
+	V.Local.sQTY.Declare
+	V.Local.sOutTime.Declare
+	V.Local.iRet.Declare
+	V.Local.sTemp.Declare
+	V.Local.dDate.Declare
+	V.Local.dTime.Declare
+	V.Local.sBin.Declare
+	V.Local.sPart.Declare
+	V.Local.sLoc.Declare
+	V.Local.sLot.Declare
+	V.Local.sHeat.Declare
+	V.Local.sDateCured.Declare
+	V.Local.sDateOut.Declare
+	V.Local.sDateDiff.Declare
+	V.Local.sDateEntered.Declare
+'	Function.Intrinsic.Debug.InvokeDebugger
+'	Function.Intrinsic.Debug.Stop
+	
+	'F.Intrinsic.String.Build("SELECT BIN FROM GCG_5862_FREEZER_BIN WHERE IS_FREEZER = 1",v.Local.sSQL)
+	
+	F.Intrinsic.Control.If(v.DataTable.dtFreezerBin.Exists)
+		F.Data.DataTable.Close("dtFreezerBin")
+	F.Intrinsic.Control.EndIf
+	
+	F.Data.DataTable.CreateFromSQL("dtFreezerBin","con","SELECT BIN FROM GCG_5862_FREEZER_BIN WHERE IS_FREEZER = 1")
+	
+	F.Intrinsic.Control.If(V.DataTable.dtFreezerBin.RowCount--,>,-1)
+		F.Intrinsic.Control.For(V.Local.iCnt,0,V.DataTable.dtFreezerBin.RowCount--,1)
+			F.Intrinsic.Control.If(V.Local.iCnt,=,0)
+				F.Intrinsic.String.Build("'{0}'",V.DataTable.dtFreezerBin(v.Local.iCnt).BIN!FieldVal,V.Local.sBin)
+			F.Intrinsic.Control.Else
+				F.Intrinsic.String.Build("{0},'{1}'",V.Local.sBin,V.DataTable.dtFreezerBin(V.Local.iCnt).BIN!FieldVal,V.Local.sBin)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Next(V.Local.iCnt)
+	F.Intrinsic.Control.Else
+		V.Local.sBin.Set("'FREEZE'")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.For(V.Local.iCnt,0,v.DataTable.dtExpMgmt.RowCount--,1)
+		V.Local.sOutTime.Set(0)
+		V.Local.sPart.Set(V.DataTable.dtExpMgmt(v.Local.iCnt).PART!FieldVal)
+		V.Local.sLoc.Set(V.DataTable.dtExpMgmt(v.Local.iCnt).LOCATION!FieldVal)
+		V.Local.sLot.Set(V.DataTable.dtExpMgmt(v.Local.iCnt).LOT!FieldVal)
+		V.Local.sHeat.Set(V.DataTable.dtExpMgmt(v.Local.iCnt).HEAT!FieldVal)
+		
+		f.Intrinsic.Control.If(v.Local.sLot.Trim, =, "08072020")
+		
+		f.Intrinsic.Control.EndIf
+		F.Intrinsic.String.Build("select RTRIM(A.PART) AS PART, RTRIM(A.LOCATION) AS LOCATION , IF(DATEDIFF(minute,A.TIME_ITEM_HISTORY,B.TIME_ITEM_HISTORY) < 0, DATEDIFF(minute,A.TIME_ITEM_HISTORY,NOW()), DATEDIFF(minute,A.TIME_ITEM_HISTORY,B.TIME_ITEM_HISTORY)) AS OUT_TIME , A.DATE_HISTORY AS DATE_TAKEN_OUT , A.TIME_ITEM_HISTORY AS TIME_TAKEN_OUT , A.CODE_TRANSACTION , RTRIM(A.LOT) AS LOT , RTRIM(A.HEAT) AS HEAT , RTRIM(LTRIM(substring( A.REFERENCE, LOCATE(':',A.REFERENCE)+1, LENGTH(A.REFERENCE)))) AS FROM_BIN , A.BIN AS TO_BIN , RTRIM(LTRIM(substring(B.REFERENCE, LOCATE(':',B.REFERENCE)+1,LENGTH(B.REFERENCE)))) AS FROM_BIN_BACK , B.BIN AS TO_BIN_BACK , B.DATE_HISTORY AS DATE_PUT_BACK , B.TIME_ITEM_HISTORY AS TIME_PUT_BACK from V_ITEM_HISTORY A LEFT OUTER JOIN V_ITEM_HISTORY B ON A.PART = B.PART AND A.LOCATION = B.LOCATION AND A.LOT = B.LOT AND A.HEAT = B.HEAT AND TO_BIN = FROM_BIN_BACK AND A.CODE_TRANSACTION = B.CODE_TRANSACTION WHERE A.PART = '{0}' AND A.LOCATION = '{1}' AND A.LOT = '{2}' AND A.HEAT = '{3}' AND A.CODE_TRANSACTION IN ('190') AND FROM_BIN IN ({4}) ORDER BY A.DATE_HISTORY ASC, A.TIME_ITEM_HISTORY ASC;",v.DataTable.dtExpMgmt(V.Local.iCnt).PART!FieldVal,v.DataTable.dtExpMgmt(V.Local.iCnt).LOCATION!FieldVal,v.DataTable.dtExpMgmt(V.Local.iCnt).LOT!FieldVal, v.DataTable.dtExpMgmt(V.Local.iCnt).HEAT!FieldVal, V.Local.sBin, V.Local.sSQL)
+		
+		F.Intrinsic.Control.If(V.DataTable.dtSub.Exists)
+			F.Data.DataTable.Close("dtSub")
+		F.Intrinsic.Control.EndIf
+		
+		F.Data.DataTable.CreateFromSQL("dtSub","con",V.Local.sSQL,True)
+		
+		F.Intrinsic.Control.If(v.DataTable.dtSub.RowCount--,>,-1)
+			F.Intrinsic.Control.For(V.Local.iCnt2,0,V.DataTable.dtSub.RowCount--,1)
+				F.Intrinsic.Math.Div(V.DataTable.dtSub(v.Local.iCnt2).OUT_TIME!FieldVal,60,V.Local.sTime)
+				V.Local.sTimeBack.Set(V.DataTable.dtSub(v.Local.iCnt2).TIME_PUT_BACK!FieldVal)
+				'F.Intrinsic.String.StripCharacters(V.Local.sTimeBack,V.Local.sTimeBack)
+				
+				F.Intrinsic.Control.If(V.Local.sTimeBack,=,"00:00:00")
+					F.Intrinsic.Control.If(V.DataTable.dtCuredCheck.Exists)
+						F.Data.DataTable.Close("dtCuredCheck")
+					F.Intrinsic.Control.EndIf
+					F.Intrinsic.String.Build("SELECT TOP 1 * FROM GCG_5862_EXP_TIME WHERE PART = '{0}' AND LOCATION = '{1}' AND LOT = '{2}'  AND HEAT = '{3}' AND TRANS_ACTION = 'CURED' ORDER BY TRANS_DATETIME DESC, ADDED_DATETIME DESC",v.DataTable.dtExpMgmt(V.Local.iCnt).PART!FieldVal,v.DataTable.dtExpMgmt(V.Local.iCnt).LOCATION!FieldVal,v.DataTable.dtExpMgmt(V.Local.iCnt).LOT!FieldVal, v.DataTable.dtExpMgmt(V.Local.iCnt).HEAT!FieldVal, V.Local.sSQL)
+					F.Data.DataTable.CreateFromSQL("dtCuredCheck","con",V.Local.sSQL,True)
+						F.Intrinsic.Control.If(v.DataTable.dtCuredCheck.RowCount--,>,-1)
+							v.Local.sTimeBack.Set(V.DataTable.dtCuredCheck(0).ADDED_DATETIME!FieldVal)
+							F.Intrinsic.String.Build("{0} {1}", V.DataTable.dtCuredCheck(0).TRANS_DATETIME!FieldVal,V.Local.sTimeBack,V.Local.sDateCured)
+							F.Intrinsic.String.Build("{0} {1}", V.DataTable.dtSub(v.Local.iCnt2).DATE_ENTERED!FieldVal, V.DataTable.dtSub(v.Local.iCnt2).TIME_TAKEN_OUT!FieldVal,V.Local.sDateOut) 
+							F.Intrinsic.Date.DateDiff("n",V.Local.sDateOut,v.Local.sDateCured,v.Local.sDateDiff)
+							F.Intrinsic.Math.Div(v.Local.sDateDiff,60,v.Local.sTime)
+						f.Intrinsic.Control.Else
+							V.Local.sTimeBack.Set("")
+						F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.Else
+					V.Local.sTimeBack.Set(V.DataTable.dtSub(v.Local.iCnt2).TIME_PUT_BACK!FieldVal)
+				F.Intrinsic.Control.EndIf
+				
+				'F.Intrinsic.Date.DateComp(V.DataTable.dtSub(v.Local.iCnt2).DATE_TAKEN_OUT,V.Local.sDateEntered)
+				V.Local.sDateEntered.Set(V.DataTable.dtSub(v.Local.iCnt2).DATE_TAKEN_OUT!FieldVal)
+				
+				F.Data.DataTable.AddRow("dtExpMgmt$dtExpChild","PART",V.DataTable.dtSub(V.Local.iCnt2).PART!FieldVal,"LOCATION",V.DataTable.dtSub(V.Local.iCnt2).LOCATION!FieldVal,"LOT",V.DataTable.dtSub(V.Local.iCnt2).LOT!FieldVal,"HEAT",V.DataTable.dtSub(V.Local.iCnt2).HEAT!FieldVal,"FROM BIN",V.DataTable.dtSub(V.Local.iCnt2).FROM_BIN!FieldVal,"TO BIN",V.DataTable.dtSub(V.Local.iCnt2).TO_BIN!FieldVal,"TIME_OUT",V.DataTable.dtSub(V.Local.iCnt2).TIME_TAKEN_OUT!FieldVal,"TIME_IN",V.Local.sTimeBack,"DESCRIPTION","Bin to Bin","DATE_ENTERED",V.Local.sDateEntered.PervasiveDate,"TIME",V.Local.sTime)
+				F.Intrinsic.Math.Add(v.Local.sOutTime,v.Local.sTime,v.Local.sOutTime)
+			F.Intrinsic.Control.Next(V.Local.iCnt2)
+		F.Intrinsic.Control.EndIf
+		
+		F.Intrinsic.Control.If(v.DataTable.dtExpMgmt(v.Local.iCnt).LOCATION!FieldVal,=,"")
+			F.Intrinsic.String.Build("SELECT RTRIM(PART) AS PART, RTRIM(LOCATION) AS LOCATION, RTRIM(LOT) AS LOT, RTRIM(HEAT) AS HEAT, TRANS_DATETIME, TRANS_ACTION, TRANS_DESCRIPTION, MANUAL_TIME, ADDED_DATETIME, ADDED_USER FROM GCG_5862_EXP_TIME WHERE PART = '{0}' AND LOCATION = '  ' AND LOT = '{2}' AND HEAT = '{3}' ORDER BY TRANS_DATETIME ASC, ADDED_DATETIME ASC;",v.DataTable.dtExpMgmt(V.Local.iCnt).PART!FieldVal,v.DataTable.dtExpMgmt(V.Local.iCnt).LOCATION!FieldVal,v.DataTable.dtExpMgmt(V.Local.iCnt).LOT!FieldVal, v.DataTable.dtExpMgmt(V.Local.iCnt).HEAT!FieldVal, V.Local.sSQL)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Build("SELECT RTRIM(PART) AS PART, RTRIM(LOCATION) AS LOCATION, RTRIM(LOT) AS LOT, RTRIM(HEAT) AS HEAT   TRANS_DATETIME, TRANS_ACTION, TRANS_DESCRIPTION, MANUAL_TIME, ADDED_DATETIME, ADDED_USER FROM GCG_5862_EXP_TIME WHERE PART = '{0}' AND LOCATION = '{1}' AND LOT = '{2}' AND HEAT = '{3}' ORDER BY TRANS_DATETIME ASC, ADDED_DATETIME ASC;",v.DataTable.dtExpMgmt(V.Local.iCnt).PART!FieldVal,v.DataTable.dtExpMgmt(V.Local.iCnt).LOCATION!FieldVal,v.DataTable.dtExpMgmt(V.Local.iCnt).LOT!FieldVal, v.DataTable.dtExpMgmt(V.Local.iCnt).HEAT!FieldVal, V.Local.sSQL)
+		F.Intrinsic.Control.EndIf
+		
+		F.Intrinsic.Control.If(V.DataTable.dtSub.Exists)
+			F.Data.DataTable.Close("dtSub")
+		F.Intrinsic.Control.EndIf
+		
+		F.Data.DataTable.CreateFromSQL("dtSub","con",V.Local.sSQL,True)
+		
+		F.Intrinsic.Control.If(v.DataTable.dtSub.RowCount--,>,-1)
+			F.Intrinsic.Control.For(V.Local.iCnt2,0,V.DataTable.dtSub.RowCount--,1)
+				'V.Local.dTime.Set(V.DataTable.dtSub(v.Local.iCnt2).ADDED_DATETIME!FieldVal)
+				V.Local.dDate.Set(V.DataTable.dtSub(v.Local.iCnt2).TRANS_DATETIME!FieldVal)
+				F.Intrinsic.Control.If(V.DataTable.dtSub(V.Local.iCnt2).LOCATION!.FieldVal,=,"  ")
+					'f.Data.DataTable.SetValue("dtSub",)
+				F.Intrinsic.Control.EndIf
+				
+				F.Data.DataTable.AddRow("dtExpMgmt$dtExpChild","PART",V.DataTable.dtSub(V.Local.iCnt2).PART!FieldVal,"LOCATION",V.DataTable.dtSub(V.Local.iCnt2).LOCATION!FieldVal,"LOT",V.DataTable.dtSub(V.Local.iCnt2).LOT!FieldVal,"HEAT",V.DataTable.dtSub(V.Local.iCnt2).HEAT!FieldVal,"TIME_IN", V.DataTable.dtSub(v.Local.iCnt2).ADDED_DATETIME!FieldVal,"DESCRIPTION",V.DataTable.dtSub(V.Local.iCnt2).TRANS_DESCRIPTION!FieldVal,"DATE_ENTERED",V.Local.dDate.PervasiveDate,"TIME",V.DataTable.dtSuB(V.Local.iCnt2).MANUAL_TIME!FieldVal)
+				F.Intrinsic.Math.Add(v.Local.sOutTime,V.DataTable.dtSuB(V.Local.iCnt2).MANUAL_TIME!FieldVal,v.Local.sOutTime)
+			F.Intrinsic.Control.Next(V.Local.iCnt2)
+		F.Intrinsic.Control.EndIf
+		
+		
+		F.Intrinsic.String.Build("select RTRIM(A.PART) AS PART, RTRIM(A.LOCATION) AS LOCATION , A.DATE_HISTORY AS DATE_TAKEN_OUT , A.TIME_ITEM_HISTORY AS TIME_TAKEN_OUT , A.CODE_TRANSACTION , RTRIM(A.LOT) AS LOT , RTRIM(A.HEAT) AS HEAT , A.BIN AS FROM_BIN ,A.QUANTITY from V_ITEM_HISTORY A  WHERE A.PART = '{0}' AND A.LOCATION = '{1}' AND A.LOT = '{2}' AND A.HEAT = '{3}' AND A.CODE_TRANSACTION IN ('J55') ORDER BY A.DATE_HISTORY ASC, A.TIME_ITEM_HISTORY ASC;",v.DataTable.dtExpMgmt(V.Local.iCnt).PART!FieldVal,v.DataTable.dtExpMgmt(V.Local.iCnt).LOCATION!FieldVal,v.DataTable.dtExpMgmt(V.Local.iCnt).LOT!FieldVal, v.DataTable.dtExpMgmt(V.Local.iCnt).HEAT!FieldVal, V.Local.sSQL)
+		
+		F.Intrinsic.Control.If(V.DataTable.dtSub.Exists)
+			F.Data.DataTable.Close("dtSub")
+		F.Intrinsic.Control.EndIf
+		
+		F.Data.DataTable.CreateFromSQL("dtSub","con",V.Local.sSQL,True)
+		
+		F.Intrinsic.Control.If(v.DataTable.dtSub.RowCount--,>,-1)
+			F.Intrinsic.Control.For(V.Local.iCnt2,0,V.DataTable.dtSub.RowCount--,1)
+				F.Intrinsic.Math.Mult(V.DataTable.dtSub(v.Local.iCnt2).QUANTITY!FieldValFloat,-1,v.Local.sQTY)
+				
+				V.Local.sDateEntered.Set(V.DataTable.dtSub(V.Local.iCnt2).DATE_TAKEN_OUT!FieldVal)
+				
+				F.Data.DataTable.AddRow("dtExpMgmt$dtExpChild","PART",V.DataTable.dtSub(V.Local.iCnt2).PART!FieldVal,"LOCATION",V.DataTable.dtSub(V.Local.iCnt2).LOCATION!FieldVal,"LOT",V.DataTable.dtSub(V.Local.iCnt2).LOT!FieldVal,"HEAT",V.DataTable.dtSub(V.Local.iCnt2).HEAT!FieldVal,"FROM BIN",V.DataTable.dtSub(V.Local.iCnt2).FROM_BIN!FieldVal,"TO BIN","To Job","TIME_OUT",V.DataTable.dtSub(V.Local.iCnt2).TIME_TAKEN_OUT!FieldVal,"DESCRIPTION","Issue to Job","DATE_ENTERED",v.Local.sDateEntered.PervasiveDate,"QTY ISSUED", v.Local.sQTY)
+			F.Intrinsic.Control.Next(V.Local.iCnt2)
+		F.Intrinsic.Control.EndIf
+		
+		'Update Out Time
+		F.Intrinsic.Control.If(v.Local.sOutTime,<>,V.DataTable.dtExpMgmt(v.Local.iCnt).TOTAL_OT!FieldValFloat,AND,V.DataTable.dtExpMgmt(V.Local.iCnt).CURED!FieldVal,=,False) 
+			F.Intrinsic.Math.Sub(v.DataTable.dtExpMgmt(v.Local.iCnt).ALLOWABLE_OT!FieldValFloat,v.Local.sOutTime,v.Local.sTemp)
+			F.Data.DataTable.SetValue("dtExpMgmt",V.Local.iCnt,"TOTAL_OT",v.Local.sOutTime)
+			F.Data.DataTable.SetValue("dtExpMgmt",V.Local.iCnt,"TIME_LEFT",v.Local.sTemp)
+			F.Intrinsic.String.Build("UPDATE GCG_5862_KIT_MSTR SET TOTAL_OT = '{0}' WHERE PART = '{1}' AND LOCATION = '{2}' AND LOT = '{3}'  AND HEAT = '{4}'",V.Local.sOutTime,v.Local.sPart,v.Local.sLoc,v.Local.sLot,v.Local.sHeat,V.Local.sSQL)
+			F.ODBC.Connection!CON.Execute(v.Local.sSQL)
+		F.Intrinsic.Control.EndIf
+				
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.PopulateSubGrid.End
+
+Program.Sub.LoadChildGV.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	F.Data.DataView.Create("dtExpMgmt$dtExpChild","dvExpChild")
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.AddGridviewFromDataview("gvChild","dtExpMgmt","dvExpChild")
+
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetGridViewProperty("gvChild","MultiSelect",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetGridViewProperty("gvChild","OptionBehaviorEditable",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetGridViewProperty("gvChild","ReadOnly",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetGridViewProperty("gvChild","AllowSort",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetGridViewProperty("gvChild","AllowFilter",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetGridViewProperty("gvChild","OptionsDetailShowDetailTabs",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetGridViewProperty("gvChild","OptionsViewShowGroupPanel",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetGridViewProperty("gvChild","AllowColumnMoving",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetGridViewProperty("gvChild","EnableAppearanceOddRow",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetGridViewProperty("gvChild","OptionsViewColumnAutoWidth",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.BestFitColumns("gvChild")
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","PART","Caption","Part")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","PART","HeaderHAlignment","Center")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","PART","HeaderFontBold",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","PART","MinWidth","85")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","PART","AllowEdit",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","PART","ReadOnly",True)
+
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","LOCATION","Caption","Location")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","LOCATION","HeaderHAlignment","Center")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","LOCATION","HeaderFontBold",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","LOCATION","MinWidth","85")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","LOCATION","AllowEdit",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","LOCATION","ReadOnly",True)
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","LOT","Caption","Lot")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","LOT","HeaderHAlignment","Center")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","LOT","HeaderFontBold",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","LOT","MinWidth","85")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","LOT","AllowEdit",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","LOT","ReadOnly",True)
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","HEAT","Caption","Heat")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","HEAT","HeaderHAlignment","Center")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","HEAT","HeaderFontBold",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","HEAT","MinWidth","85")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","HEAT","AllowEdit",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","HEAT","ReadOnly",True)
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","FROM BIN","Caption","FROM Bin")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","FROM BIN","HeaderHAlignment","Center")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","FROM BIN","HeaderFontBold",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","FROM BIN","MinWidth","85")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","FROM BIN","AllowEdit",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","FROM BIN","ReadOnly",True)
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TO BIN","Caption","TO Bin")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TO BIN","HeaderHAlignment","Center")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TO BIN","HeaderFontBold",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TO BIN","MinWidth","85")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TO BIN","AllowEdit",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TO BIN","ReadOnly",True)
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TIME_OUT","Caption","Time Out")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TIME_OUT","HeaderHAlignment","Center")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TIME_OUT","HeaderFontBold",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TIME_OUT","MinWidth","85")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TIME_OUT","AllowEdit",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TIME_OUT","ReadOnly",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TIME_OUT","DisplayCustomDatetime","t")
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TIME_IN","Caption","Time In")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TIME_IN","HeaderHAlignment","Center")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TIME_IN","HeaderFontBold",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TIME_IN","MinWidth","85")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TIME_IN","AllowEdit",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TIME_IN","ReadOnly",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TIME_IN","DisplayCustomDatetime","t")
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","DESCRIPTION","Caption","Description")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","DESCRIPTION","HeaderHAlignment","Center")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","DESCRIPTION","HeaderFontBold",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","DESCRIPTION","MinWidth","85")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","DESCRIPTION","AllowEdit",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","DESCRIPTION","ReadOnly",True)
+
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","DATE_ENTERED","Caption","Date Entered")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","DATE_ENTERED","HeaderHAlignment","Center")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","DATE_ENTERED","HeaderFontBold",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","DATE_ENTERED","MinWidth","85")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","DATE_ENTERED","AllowEdit",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","DATE_ENTERED","ReadOnly",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","DATE_ENTERED", "ShowEmptyDateFilter",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","DATE_ENTERED","DisplayCustomDatetime","d")
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TIME","Caption","Time")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TIME","HeaderHAlignment","Center")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TIME","HeaderFontBold",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TIME","MinWidth","85")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TIME","AllowEdit",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TIME","ReadOnly",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TIME", "ShowEmptyDateFilter",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","TIME","DisplayCustomNumeric","###,##0.00000")
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","QTY ISSUED","Caption","Qunatity Issued")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","QTY ISSUED","HeaderHAlignment","Center")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","QTY ISSUED","HeaderFontBold",True)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","QTY ISSUED","MinWidth","85")
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","QTY ISSUED","AllowEdit",False)
+	Gui.FrmExpMgmt.GsGcExpMgmt.SetColumnProperty("gvChild","QTY ISSUED","ReadOnly",True)
+
+	f.Data.DataView.Close("dtExpMgmt$dtExpChild","dvExpChild")
+
+
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.LoadChildGV.End
+
+Program.Sub.cmdAutoFill_Click.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+
+		
+	V.Local.sDesc.Declare
+	V.Local.sOutTime.Declare
+	V.Local.iCnt.Declare
+	
+	F.Intrinsic.Control.BlockEvents
+	
+	V.Local.sDesc.Set(V.DataTable.dtManExp(0).DESCRIPTION!Fieldval)
+	V.Local.sOutTime.Set(V.DataTable.dtManExp(0).OUT_TIME!FieldValFloat)
+	
+	F.Intrinsic.Control.For(V.Local.iCnt,1,V.DataTable.dtManExp.RowCount--,1)
+		F.Data.DataTable.SetValue("dtManExp",v.Local.iCnt,"DESCRIPTION",v.Local.sDesc)
+		F.Data.DataTable.SetValue("dtManExp",v.Local.iCnt,"OUT_TIME",v.Local.sOutTime)
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+
+	F.Intrinsic.Control.CallSub(LoadManExpGV)
+	F.Intrinsic.Control.UnBlockEvents
+
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.cmdAutoFill_Click.End
+
+Program.Sub.LoadDtCreateKit.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+
+	Gui.FrmCreateKit..Show
+	
+	V.Global.bLoadData.Set(True)
+	
+	F.Intrinsic.Control.If(V.DataTable.dtCreateKit.Exists)
+		F.Data.DataTable.Close("dtCreateKit")
+	F.Intrinsic.Control.EndIf
+	
+	F.Data.DataView.Create("dtExpMgmt","dvCreateKit",22,"SELECT_PART = True","")
+	F.Data.DataView.ToDataTableDistinct("dtExpMgmt","dvCreateKit","dtCreateKit","PART*!*LOCATION*!*LOT*!*HEAT*!*SERIAL_NUMBER*!*QUANTITY*!*TOTAL_OT*!*ALLOWABLE_OT",True)
+	F.Data.DataView.Close("dtExpMgmt","dvCreateKit")
+
+	F.Data.DataTable.AddColumn("dtCreateKit","KIT_QTY",Float,0)
+	F.Data.DataTable.AddColumn("dtCreateKit","NUM_KIT",Float,0)
+	
+	F.Intrinsic.Control.CallSub(LoadCreateKitGV)
+
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.LoadDtCreateKit.End
+
+Program.Sub.LoadCreateKitGV.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+			
+	Gui.FrmCreateKit.GsGcCreateKit.AddGridviewFromDatatable("gvCreateKit","dtCreateKit")
+	Gui.FrmCreateKit.GsGcCreateKit.SuspendLayout()
+	Gui.FrmCreateKit.GsGcCreateKit.SetGridviewProperty("gvCreateKit","AllowSort",True)
+	Gui.FrmCreateKit.GsGcCreateKit.SetGridviewProperty("gvCreateKit","AllowFilter",True)
+	Gui.FrmCreateKit.GsGcCreateKit.SetGridviewProperty("gvCreateKit","OptionsViewShowGroupPanel",True)
+	Gui.FrmCreateKit.GsGcCreateKit.SetGridviewProperty("gvCreateKit","EnableAppearanceOddRow",True)
+	Gui.FrmCreateKit.GsGcCreateKit.BestFitColumns("gvCreateKit")
+	
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","PART","Caption","Part")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","PART","HeaderHAlignment","Center")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","PART","HeaderFontBold",True)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","PART","MinWidth","85")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","PART","AllowEdit",False)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","PART","ReadOnly",True)
+
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","LOCATION","Caption","Location")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","LOCATION","HeaderHAlignment","Center")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","LOCATION","HeaderFontBold",True)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","LOCATION","MinWidth","85")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","LOCATION","AllowEdit",False)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","LOCATION","ReadOnly",True)
+	
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","LOT","Caption","Lot")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","LOT","HeaderHAlignment","Center")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","LOT","HeaderFontBold",True)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","LOT","MinWidth","85")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","LOT","AllowEdit",False)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","LOT","ReadOnly",True)
+	
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","HEAT","Caption","Heat")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","HEAT","HeaderHAlignment","Center")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","HEAT","HeaderFontBold",True)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","HEAT","MinWidth","85")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","HEAT","AllowEdit",False)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","HEAT","ReadOnly",True)
+	
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","SERIAL_NUMBER","Caption","Serial")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","SERIAL_NUMBER","HeaderHAlignment","Center")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","SERIAL_NUMBER","HeaderFontBold",True)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","SERIAL_NUMBER","MinWidth","85")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","SERIAL_NUMBER","AllowEdit",False)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","SERIAL_NUMBER","ReadOnly",True)
+	
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","QUANTITY","Caption","Quantity")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","QUANTITY","HeaderHAlignment","Center")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","QUANTITY","HeaderFontBold",True)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","QUANTITY","MinWidth","85")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","QUANTITY","AllowEdit",False)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","QUANTITY","ReadOnly",True)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","QUANTITY","DisplayCustomNumeric","###,##0.00000")
+	
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","TOTAL_OT","Caption","Total Out Time")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","TOTAL_OT","HeaderHAlignment","Center")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","TOTAL_OT","HeaderFontBold",True)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","TOTAL_OT","MinWidth","85")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","TOTAL_OT","AllowEdit",False)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","TOTAL_OT","ReadOnly",True)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","TOTAL_OT","DisplayCustomNumeric","###,##0.00000")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","TOTAL_OT","Visible",False)
+	
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","ALLOWABLE_OT","Caption","Allowable OT")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","ALLOWABLE_OT","HeaderHAlignment","Center")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","ALLOWABLE_OT","HeaderFontBold",True)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","ALLOWABLE_OT","MinWidth","85")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","ALLOWABLE_OT","AllowEdit",False)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","ALLOWABLE_OT","ReadOnly",True)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","ALLOWABLE_OT","DisplayCustomNumeric","###,##0.00000")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","ALLOWABLE_OT","Visible",False)
+		
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","KIT_QTY","Caption","Kit Quantity")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","KIT_QTY","HeaderHAlignment","Center")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","KIT_QTY","HeaderFontBold",True)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","KIT_QTY","MinWidth","85")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","KIT_QTY","AllowEdit",True)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","KIT_QTY","ReadOnly",False)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","KIT_QTY","CellBackColor","LightYellow")
+	
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","NUM_KIT","Caption","# of Kits")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","NUM_KIT","HeaderHAlignment","Center")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","NUM_KIT","HeaderFontBold",True)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","NUM_KIT","MinWidth","85")
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","NUM_KIT","AllowEdit",True)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","NUM_KIT","ReadOnly",False)
+	Gui.FrmCreateKit.GsGcCreateKit.SetColumnProperty("gvCreateKit","NUM_KIT","CellBackColor","LightYellow")
+		
+	Gui.FrmCreateKit.GsGcCreateKit.ResumeLayout()
+	Gui.FrmCreateKit.GsGcCreateKit.MainView("gvCreateKit")
+
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.LoadCreateKitGV.End
+
+Program.Sub.FrmCreateKit_UnLoad.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	Gui.FrmExpMgmt.GsGcExpMgmt.Enabled(True)
+	Gui.FrmExpMgmt.cmdUpload.Enabled(True)
+	Gui.FrmCreateKit..Visible(False)
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.FrmCreateKit_UnLoad.End
+
+Program.Sub.cmdCreate_Click.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	V.Local.iCnt.Declare
+	V.Local.iCnt2.Declare
+	V.Local.sSQL.Declare
+	V.Local.fKitQty.Declare
+	V.Local.fNumKit.Declare
+	V.Local.iIncr.Declare(Long)
+	V.Local.sHeat.Declare
+	V.Local.iDTLength.Declare
+	V.Local.fTotQty.Declare
+	V.Local.iRet.Declare
+	V.Local.sBin.Declare
+	V.Local.sQty.Declare
+	v.Local.sCost.Declare
+	V.Local.sReceiptLine.Declare
+	V.Local.sIssueLine.Declare
+	V.Local.sText.Declare
+	V.Local.sFilePath.Declare
+	V.Local.sPart.Declare
+	V.Local.sMsgBox.Declare
+	V.Local.sShip.Declare
+	V.Local.sIss.Declare
+	v.Local.fTotalOT.Declare
+	v.Local.dTimeOT.Declare
+	v.Local.sTemp.Declare
+	
+	
+	v.Local.dTempDate.Declare
+	v.Local.dTempTime.Declare
+	v.Local.dCurrentDateTime.Declare
+
+	F.Intrinsic.UI.InvokeWaitDialog("Creating Kits...", "Create Kits")
+	
+	F.Global.General.ReadOption("400380","0","0","0000",V.Local.sShip)
+	F.Global.General.ReadOption("400400","0","0","0000",V.Local.sIss)
+
+	F.Intrinsic.Control.For(V.Local.iCnt,V.DataTable.dtCreateKit.RowCount--,0,-1)
+		
+		F.Intrinsic.Control.If(v.Local.sShip,=,"True",OR,v.Local.sIss,=,"True")
+			F.Intrinsic.String.Build("SELECT A.BIN, A.QUANTITY, A.UNIT_COST AS COST FROM V_ITEM_MASTER A LEFT JOIN V_INVENTORY_COST B ON A.PART = B.PART AND A.LOCATION = B.LOCN WHERE A.PART = '{0}' AND isnull(LOCATION, '') A.LOCATION = '{1}' AND A.LOT = '{2}'  AND A.HEAT = '{3}' AND A.SERIAL_NUMBER  = '{4}' and A.QUANTITY <> 0",V.DataTable.dtCreateKit(V.Local.iCnt).PART!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).LOCATION!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).LOT!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).HEAT!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).SERIAL_NUMBER!FieldVal,V.Local.sSQL)
+			F.Intrinsic.Control.If(V.DataTable.dtBin.Exists)
+				F.Data.DataTable.Close("dtBin")
+			F.Intrinsic.Control.EndIf
+			F.Data.DataTable.CreateFromSQL("dtBin","con",v.Local.sSQL,True)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Build("SELECT A.BIN, A.QUANTITY, B.COST FROM V_ITEM_MASTER A LEFT JOIN V_INVENTORY_COST B ON A.PART = B.PART AND A.LOCATION = B.LOCN WHERE A.PART = '{0}' AND A.LOCATION = '{1}' AND A.LOT = '{2}'  AND A.HEAT = '{3}' AND A.SERIAL_NUMBER  = '{4}' and A.QUANTITY <> 0",V.DataTable.dtCreateKit(V.Local.iCnt).PART!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).LOCATION!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).LOT!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).HEAT!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).SERIAL_NUMBER!FieldVal,V.Local.sSQL)
+			F.Intrinsic.Control.If(V.DataTable.dtBin.Exists)
+				F.Data.DataTable.Close("dtBin")
+			F.Intrinsic.Control.EndIf
+			F.Data.DataTable.CreateFromSQL("dtBin","con",v.Local.sSQL,True)
+		F.Intrinsic.Control.EndIf
+		
+		V.Local.sPart.Set(V.DataTable.dtCreateKit(V.Local.iCnt).PART!FieldVal)
+		'F.Intrinsic.String.RPad(V.Local.sPart," ",20,V.Local.sPart)
+		
+		
+		'f.Intrinsic.String.Build("select top 1 cast(date_history as Date) from V_item_history where part = '{0}' and lot = '{1}' and code_transaction = '190' and  isNull(heat, '')  = '' and reference = 'FRM BIN: Freezr'", V.DataTable.dtCreateKit(V.Local.iCnt).PART!FieldVal, V.DataTable.dtCreateKit(V.Local.iCnt).LOT!FieldVal, v.Local.sSQL)
+	'	f.ODBC.Connection!con.ExecuteAndRerurn(v.Local.sSQL, v.Local.dTempDate)
+		
+		'f.Intrinsic.String.Build("select top 1 cast(time_item_history as Time) from V_item_history where part = '{0}' and lot = '{1}' and code_transaction = '190' and  isNull(heat, '')  = '' and reference = 'FRM BIN: Freezr'", V.DataTable.dtCreateKit(V.Local.iCnt).PART!FieldVal, V.DataTable.dtCreateKit(V.Local.iCnt).LOT!FieldVal, v.Local.sSQL)
+		'f.ODBC.Connection!con.ExecuteAndRerurn(v.Local.sSQL, v.Local.dTempTime)
+		
+		f.Intrinsic.String.Build("select top 1 * from V_item_history where part = '{0}' and lot = '{1}' and code_transaction = '190' and  isNull(heat, '')  = '' and reference = 'FRM BIN: Freezr'", V.DataTable.dtCreateKit(V.Local.iCnt).PART!FieldVal, V.DataTable.dtCreateKit(V.Local.iCnt).LOT!FieldVal, v.Local.sSQL)
+		f.Data.DataTable.CreateFromSQL("itemHistDT", "con", v.Local.sSQL)
+		
+		f.Intrinsic.Control.If(v.DataTable.itemHistDT.RowCount, >, 0)
+			
+			f.Intrinsic.Date.DateComp(v.DataTable.itemHistDT(0).date_history!FieldVal, v.Local.dTempDate)
+			'f.Intrinsic.Date.TimeComp(v.DataTable.itemHistDT(0).time_item_history!FieldVal, v.Local.dTempTime)
+			f.Intrinsic.Date.CombineDateTime(v.Local.dTempDate, v.DataTable.itemHistDT(0).time_item_history!FieldVal, v.Local.dTempDate)
+		
+			f.Intrinsic.Date.DateComp(v.Ambient.Date, v.Local.dCurrentDateTime)
+			f.Intrinsic.Date.CombineDateTime(v.Local.dCurrentDateTime, v.Ambient.Time, v.Local.dCurrentDateTime)
+			f.Intrinsic.Date.DateDiff("N", v.Local.dCurrentDateTime, v.Local.dTempDate, v.Local.fTotalOT)
+			f.Intrinsic.Math.Div(v.Local.fTotalOT, 60, v.Local.fTotalOT)
+			f.Intrinsic.Math.Mult(v.Local.fTotalOT, -1, v.Local.fTotalOT)
+			f.Intrinsic.Math.Add(V.DataTable.dtCreateKit(v.Local.iCnt).TOTAL_OT!FieldValFloat, v.Local.fTotalOT, v.Local.fTotalOT)
+		f.Intrinsic.Control.Else
+			v.Local.fTotalOT.Set(V.DataTable.dtCreateKit(v.Local.iCnt).TOTAL_OT!FieldValFloat)
+		f.Intrinsic.Control.EndIf
+		
+		f.Data.DataTable.Close("itemHistDT")
+'		'f.Intrinsic.Control.If(v.Local.sTemp.IsDate)
+'			f.Intrinsic.Date.DateComp(v.Ambient, v.Local.dCurrentDateTime)
+'			f.Intrinsic.Date.CombineDateTime(v.Local.dCurrentDateTime, v.Ambient.Time)
+'			f.Intrinsic.Date.DateDiff("N", v.Local.dCurrentDateTime, v.Local.sTemp, v.Local.fTotalOT)
+'			f.Intrinsic.Math.Div(v.Local.fTotalOT, 60, v.Local.fTotalOT)
+'	'	f.Intrinsic.Control.EndIf
+'		
+		V.Local.sBin.Set(V.DataTable.dtBin(0).BIN!FieldVal)
+		V.Local.sQty.Set(V.DataTable.dtBin(0).QUANTITY!FieldValFloat)
+		V.Local.sCost.Set(V.DataTable.dtBin(0).COST!FieldValFloat)
+		
+		V.Local.fNumKit.Set(V.DataTable.dtCreateKit(v.Local.iCnt).NUM_KIT!FieldVal)
+		V.Local.fKitQty.Set(V.DataTable.dtCreateKit(v.Local.iCnt).KIT_QTY!FieldVal)
+		F.Intrinsic.Math.Floor(v.Local.fNumKit,v.Local.fNumKit)
+		F.Intrinsic.Math.Mult(V.Local.fKitQty,V.Local.fNumKit,V.Local.fTotQty)
+		
+		F.Intrinsic.String.Build("Create {0} Kits with a quantity of {1} in each kit for part {2} with a lot of {3}?",V.Local.fNumKit,V.Local.fKitQty,V.Local.sPart,V.DataTable.dtCreateKit(V.Local.iCnt).LOT!FieldVal,V.Local.sMsgBox)
+		F.Intrinsic.UI.Msgbox(V.Local.sMsgBox,"Create Kits",4,V.Local.iRet)
+		
+		F.Intrinsic.Control.If(V.Local.iRet,=,6)
+			f.Intrinsic.Control.If(V.Local.fTotQty,>,V.DataTable.dtCreateKit(v.Local.iCnt).QUANTITY!FieldValFloat)
+				F.Intrinsic.UI.Msgbox("Quantity to split is greater than quantity on hand.","Quantity Error",v.Local.iRet)
+			F.Intrinsic.Control.Else
+				F.Intrinsic.Math.Sub(V.Local.sQty,V.Local.fTotQty,V.Local.sQty)
+				F.Intrinsic.String.Build("SELECT TOP 1 PART, LOCATION, LOT, SUBSTRING(HEAT,2,2) AS HEAT FROM GCG_5862_KIT_MSTR WHERE PART = '{0}' AND LOCATION  = '{1}' AND LOT = '{2}' AND HEAT LIKE 'K%' ORDER BY HEAT DESC", V.DataTable.dtCreateKit(V.Local.iCnt).PART!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).LOCATION!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).LOT!FieldVal,V.Local.sSQL)
+				F.Intrinsic.Control.If(V.DataTable.dtKits.Exists)
+					F.Data.DataTable.Close("dtKits")
+				F.Intrinsic.Control.EndIf
+				F.Data.DataTable.CreateFromSQL("dtKits","con",V.Local.sSQL,True)
+				F.Intrinsic.Control.If(v.DataTable.dtKits.RowCount--,>,-1)
+					v.Local.iIncr.Set(V.DataTable.dtKits(V.Local.iCnt).HEAT!FieldValTrim)
+					V.Local.iIncr.Set(V.Local.iIncr.++)
+					F.Intrinsic.Control.For(v.Local.iCnt2,1,v.Local.fNumKit,1)
+						F.Intrinsic.Control.If(V.Local.iIncr,<,10)
+							F.Intrinsic.String.Build("K0{0}{1}",V.Local.iIncr,v.DataTable.dtCreateKit(v.Local.iCnt).HEAT!FieldVal,V.Local.sHeat)
+						F.Intrinsic.Control.Else
+							F.Intrinsic.String.Build("K{0}{1}",V.Local.iIncr,v.DataTable.dtCreateKit(v.Local.iCnt).HEAT!FieldVal,V.Local.sHeat)
+						F.Intrinsic.Control.EndIf
+						F.Data.DataTable.AddRow("dtCreateKit","PART",v.DataTable.dtCreateKit(v.Local.iCnt).PART!FieldVal,"LOCATION",v.DataTable.dtCreateKit(v.Local.iCnt).LOCATION!FieldVal,"LOT",v.DataTable.dtCreateKit(v.Local.iCnt).LOT!FieldVal,"HEAT",V.Local.sHeat,"SERIAL_NUMBER",v.DataTable.dtCreateKit(v.Local.iCnt).SERIAL_NUMBER!FieldVal,"QUANTITY",v.Local.fKitQty)
+'						F.Intrinsic.String.Build("INSERT INTO GCG_5862_KIT_MSTR (PART,LOCATION,LOT,HEAT,ALLOWABLE_OT,TOTAL_OT,PO_RECEIVER,CURED) VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','0')",V.DataTable.dtCreateKit(V.Local.iCnt).PART!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).LOCATION!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).LOT!FieldVal,v.Local.sHeat,v.DataTable.dtCreateKit(v.Local.iCnt).ALLOWABLE_OT!FieldValFloat,V.DataTable.dtCreateKit(v.Local.iCnt).TOTAL_OT!FieldValFloat,"",V.Local.sSQL)
+'						F.ODBC.Connection!con.Execute(v.Local.sSQL)
+'						F.Intrinsic.String.Build("INSERT INTO GCG_5862_EXP_TIME (PART, LOCATION, LOT, HEAT, TRANS_DATETIME, TRANS_ACTION ,TRANS_DESCRIPTION, MANUAL_TIME, ADDED_DATETIME, ADDED_USER) VALUES ('{0}','{1}','{2}','{3}',CURDATE(),'Kit','Kit Creation','{4}',CURTIME(),'{5}')",V.DataTable.dtCreateKit(V.Local.iCnt).PART!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).LOCATION!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).LOT!FieldVal,v.Local.sHeat,V.DataTable.dtCreateKit(v.Local.iCnt).TOTAL_OT!FieldValFloat,v.Caller.User,V.Local.sSQL)
+'						F.ODBC.Connection!con.Execute(v.Local.sSQL)
+						
+						
+						F.Intrinsic.String.Build("INSERT INTO GCG_5862_KIT_MSTR (PART,LOCATION,LOT,HEAT,ALLOWABLE_OT,TOTAL_OT,PO_RECEIVER,CURED) VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','0')",V.DataTable.dtCreateKit(V.Local.iCnt).PART!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).LOCATION!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).LOT!FieldVal,v.Local.sHeat,v.DataTable.dtCreateKit(v.Local.iCnt).ALLOWABLE_OT!FieldValFloat,v.Local.fTotalOT,"",V.Local.sSQL)
+						F.ODBC.Connection!con.Execute(v.Local.sSQL)
+						F.Intrinsic.String.Build("INSERT INTO GCG_5862_EXP_TIME (PART, LOCATION, LOT, HEAT, TRANS_DATETIME, TRANS_ACTION ,TRANS_DESCRIPTION, MANUAL_TIME, ADDED_DATETIME, ADDED_USER) VALUES ('{0}','{1}','{2}','{3}',CURDATE(),'Kit','Kit Creation','{4}',CURTIME(),'{5}')",V.DataTable.dtCreateKit(V.Local.iCnt).PART!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).LOCATION!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).LOT!FieldVal,v.Local.sHeat,v.Local.fTotalOT,v.Caller.User,V.Local.sSQL)
+						F.ODBC.Connection!con.Execute(v.Local.sSQL)
+						
+						
+					'	v.Local.fTotalOT
+						'PART 0, REV 1, LOC 2, QTY 3, REF "Kit Creation", LOT 4, BIN 5, HEAT 6, SERIAL 7, ISS-REC(I for Issue, R for Rec) R, GL-ACCT N, COST 8, ALLOW-ZERO-COST-FLAG Y, WIDTH, LENGTH, UM-WIDTH, UM-LENGTH
+						f.Intrinsic.String.Build("{0},{1},{2},{3},KIT,{4},{5},{6},{7},R,N,{8},Y,,,,", V.DataTable.dtCreateKit(V.Local.iCnt).PART!FieldVal, "", V.DataTable.dtCreateKit(V.Local.iCnt).LOCATION!FieldVal, V.Local.fKitQty,V.DataTable.dtCreateKit(V.Local.iCnt).LOT!FieldVal,v.Local.sBin, V.Local.sHeat, V.DataTable.dtCreateKit(V.Local.iCnt).SERIAL_NUMBER!FieldVal, v.Local.sCost, v.Local.sReceiptLine)
+						f.Intrinsic.String.Build("{0}{1}{2}", v.Local.sText, v.Local.sReceiptLine, v.Ambient.NewLine, v.Local.sText)
+			
+						'f.Intrinsic.String.Build("{0}\ISSREC.txt", v.Caller.FilesDir, v.Local.sFilePath)
+						'f.Intrinsic.File.String2File(v.Local.sFilePath, v.Local.sText)
+						'v.Local.sText.Set("")
+			
+						'f.Global.Callwrapper.New("IssueReceipt", "Inventory.StandAloneIssueReceipts")
+						'F.Global.Callwrapper.SetProperty("IssueReceipt", "FileName", "ISSREC.txt")
+						'F.Global.Callwrapper.Run("IssueReceipt")
+						'F.Intrinsic.File.DeleteFile(v.Local.sFilePath)
+						
+						V.Local.sHeat.Set("")
+						V.Local.iIncr.Set(V.Local.iIncr.++)
+					F.Intrinsic.Control.Next(v.Local.iCnt2)
+				F.Intrinsic.Control.Else
+					V.Local.iIncr.Set(1)			
+					F.Intrinsic.Control.For(v.Local.iCnt2,1,v.Local.fNumKit,1)
+						F.Intrinsic.Control.If(V.Local.iIncr,<,10)
+							F.Intrinsic.String.Build("K0{0}{1}",V.Local.iIncr,v.DataTable.dtCreateKit(v.Local.iCnt).HEAT!FieldVal,V.Local.sHeat)
+						F.Intrinsic.Control.Else
+							F.Intrinsic.String.Build("K{0}{1}",V.Local.iIncr,v.DataTable.dtCreateKit(v.Local.iCnt).HEAT!FieldVal,V.Local.sHeat)
+						F.Intrinsic.Control.EndIf
+						F.Data.DataTable.AddRow("dtCreateKit","PART",v.DataTable.dtCreateKit(v.Local.iCnt).PART!FieldVal,"LOCATION",v.DataTable.dtCreateKit(v.Local.iCnt).LOCATION!FieldVal,"LOT",v.DataTable.dtCreateKit(v.Local.iCnt).LOT!FieldVal,"HEAT",V.Local.sHeat,"SERIAL_NUMBER",v.DataTable.dtCreateKit(v.Local.iCnt).SERIAL_NUMBER!FieldVal,"QUANTITY",v.Local.fKitQty)
+'						F.Intrinsic.String.Build("INSERT INTO GCG_5862_KIT_MSTR (PART,LOCATION,LOT,HEAT,ALLOWABLE_OT,TOTAL_OT,PO_RECEIVER,CURED) VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','0')",V.DataTable.dtCreateKit(V.Local.iCnt).PART!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).LOCATION!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).LOT!FieldVal,v.Local.sHeat,v.DataTable.dtCreateKit(v.Local.iCnt).ALLOWABLE_OT!FieldValFloat,V.DataTable.dtCreateKit(v.Local.iCnt).TOTAL_OT!FieldValFloat,"",V.Local.sSQL)
+'						F.ODBC.Connection!con.Execute(v.Local.sSQL)
+'						F.Intrinsic.String.Build("INSERT INTO GCG_5862_EXP_TIME (PART, LOCATION, LOT, HEAT, TRANS_DATETIME, TRANS_ACTION ,TRANS_DESCRIPTION, MANUAL_TIME, ADDED_DATETIME, ADDED_USER) VALUES ('{0}','{1}','{2}','{3}',CURDATE(),'Kit','Kit Creation','{4}',CURTIME(),'{5}')",V.DataTable.dtCreateKit(V.Local.iCnt).PART!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).LOCATION!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).LOT!FieldVal,v.Local.sHeat,V.DataTable.dtCreateKit(v.Local.iCnt).TOTAL_OT!FieldValFloat,v.Caller.User,V.Local.sSQL)
+'						F.ODBC.Connection!con.Execute(v.Local.sSQL)
+'						
+'						v.Local.fTotalOT
+						
+						F.Intrinsic.String.Build("INSERT INTO GCG_5862_KIT_MSTR (PART,LOCATION,LOT,HEAT,ALLOWABLE_OT,TOTAL_OT,PO_RECEIVER,CURED) VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','0')",V.DataTable.dtCreateKit(V.Local.iCnt).PART!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).LOCATION!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).LOT!FieldVal,v.Local.sHeat,v.DataTable.dtCreateKit(v.Local.iCnt).ALLOWABLE_OT!FieldValFloat,v.Local.fTotalOT,"",V.Local.sSQL)
+						F.ODBC.Connection!con.Execute(v.Local.sSQL)
+						F.Intrinsic.String.Build("INSERT INTO GCG_5862_EXP_TIME (PART, LOCATION, LOT, HEAT, TRANS_DATETIME, TRANS_ACTION ,TRANS_DESCRIPTION, MANUAL_TIME, ADDED_DATETIME, ADDED_USER) VALUES ('{0}','{1}','{2}','{3}',CURDATE(),'Kit','Kit Creation','{4}',CURTIME(),'{5}')",V.DataTable.dtCreateKit(V.Local.iCnt).PART!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).LOCATION!FieldVal,V.DataTable.dtCreateKit(V.Local.iCnt).LOT!FieldVal,v.Local.sHeat,v.Local.fTotalOT,v.Caller.User,V.Local.sSQL)
+						F.ODBC.Connection!con.Execute(v.Local.sSQL)
+						
+						'PART 0, REV 1, LOC 2, QTY 3, REF "Kit Creation", LOT 4, BIN 5, HEAT 6, SERIAL 7, ISS-REC(I for Issue, R for Rec) R, GL-ACCT N, COST 8, ALLOW-ZERO-COST-FLAG Y, WIDTH, LENGTH, UM-WIDTH, UM-LENGTH
+						f.Intrinsic.String.Build("{0},{1},{2},{3},KIT,{4},{5},{6},{7},R,N,{8},Y,,,,", V.DataTable.dtCreateKit(V.Local.iCnt).PART!FieldVal, "", V.DataTable.dtCreateKit(V.Local.iCnt).LOCATION!FieldVal, V.Local.fKitQty,V.DataTable.dtCreateKit(V.Local.iCnt).LOT!FieldVal,v.Local.sBin, V.Local.sHeat, V.DataTable.dtCreateKit(V.Local.iCnt).SERIAL_NUMBER!FieldVal, v.Local.sCost, v.Local.sReceiptLine)
+						f.Intrinsic.String.Build("{0}{1}{2}", v.Local.sText, v.Local.sReceiptLine, v.Ambient.NewLine, v.Local.sText)
+			
+						'f.Intrinsic.String.Build("{0}\ISSREC.txt", v.Caller.FilesDir, v.Local.sFilePath)
+						'f.Intrinsic.File.String2File(v.Local.sFilePath, v.Local.sText)
+						'v.Local.sText.Set("")
+			
+						'f.Global.Callwrapper.New("IssueReceipt", "Inventory.StandAloneIssueReceipts")
+						'F.Global.Callwrapper.SetProperty("IssueReceipt", "FileName", "ISSREC.txt")
+						'F.Global.Callwrapper.Run("IssueReceipt")
+						'F.Intrinsic.File.DeleteFile(v.Local.sFilePath)			
+						
+						V.Local.sHeat.Set("")
+						V.Local.iIncr.Set(V.Local.iIncr.++)
+					F.Intrinsic.Control.Next(v.Local.iCnt2)
+				F.Intrinsic.Control.EndIf
+			
+			
+			'F.ODBC.Connection!con.Execute(v.Local.sSQL)
+			'NEED TO ADD HISTORY RECORDS.
+			
+			'Stand Alone Issue
+			'PART 0, REV 1, LOC 2, QTY 3, REF "Kit Creation", LOT 4, BIN 5, HEAT 6, SERIAL 7, ISS-REC(I for Issue, R for Rec) I, GL-ACCT N, COST 8, ALLOW-ZERO-COST-FLAG Y, WIDTH, LENGTH, UM-WIDTH, UM-LENGTH
+			f.Intrinsic.String.Build("{0},{1},{2},{3},KIT,{4},{5},{6},{7},I,N,{8},Y,,,,", V.Local.sPart, "", V.DataTable.dtCreateKit(V.Local.iCnt).LOCATION!FieldVal, V.Local.fTotQty,V.DataTable.dtCreateKit(V.Local.iCnt).LOT!FieldVal,v.Local.sBin, V.DataTable.dtCreateKit(V.Local.iCnt).HEAT!FieldVal, V.DataTable.dtCreateKit(V.Local.iCnt).SERIAL_NUMBER!FieldVal, v.Local.sCost, v.Local.sReceiptLine)
+			f.Intrinsic.String.Build("{0}{1}{2}", v.Local.sText, v.Local.sReceiptLine, v.Ambient.NewLine, v.Local.sText)
+			
+			'f.Intrinsic.String.Build("{0}\ISSREC.txt", v.Caller.FilesDir, v.Local.sFilePath)
+			'f.Intrinsic.File.String2File(v.Local.sFilePath, v.Local.sText)
+			
+	'		f.Global.Callwrapper.New("IssueReceipt", "Inventory.StandAloneIssueReceipts")
+	'		F.Global.Callwrapper.SetProperty("IssueReceipt", "FileName", "ISSREC.txt")
+	'		F.Global.Callwrapper.Run("IssueReceipt")
+	'		F.Intrinsic.File.DeleteFile(v.Local.sFilePath)
+			
+			F.Data.DataTable.DeleteRow("dtCreateKit",v.Local.iCnt)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+
+	f.Intrinsic.String.Build("{0}\ISSREC.txt", v.Caller.FilesDir, v.Local.sFilePath)
+	f.Intrinsic.File.String2File(v.Local.sFilePath, v.Local.sText)
+	v.Local.sText.Set("")
+		
+	f.Global.Callwrapper.New("IssueReceipt", "Inventory.StandAloneIssueReceipts")
+	F.Global.Callwrapper.SetProperty("IssueReceipt", "FileName", "ISSREC.txt")
+	F.Global.Callwrapper.Run("IssueReceipt")
+	F.Intrinsic.File.DeleteFile(v.Local.sFilePath)
+
+	F.Intrinsic.UI.CloseWaitDialog
+
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.cmdCreate_Click.End
+
+Program.Sub.cmdPrint_Click.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	V.Local.iBIRunID.Declare
+	V.Local.iBILogID.Declare
+	V.local.iRet.Declare
+	V.Local.iRptID.Declare
+	V.Local.sParamNames.Declare
+	V.Local.sParamValues.Declare
+	V.Local.iCnt.Declare
+	V.Local.sPart.Declare
+	V.Local.sLocation.Declare
+	V.Local.sLot.Declare
+	V.Local.sHeat.Declare
+	V.Local.sPartParam.Declare
+	V.Local.sLocParam.Declare
+	V.Local.sLotParam.Declare
+	V.Local.sHeatParam.Declare
+	V.Local.iRunID.Declare
+	V.Local.sSQL.Declare
+	
+	'Get Report ID
+	F.Global.BI.GetIDFromName("GCG_5862_Kit_Form.rpt",V.Local.iRptID)
+	F.Intrinsic.Control.If(V.Local.iRptID,<,0)
+		F.Intrinsic.UI.Msgbox("GCG_5862_Kit_Form.rpt is not setup as a custom report.","Report not setup")
+		F.Intrinsic.Control.End
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.If(V.DataTable.dtRunID.Exists)
+		F.Data.DataTable.Close("dtRunID")
+	F.Intrinsic.Control.EndIf
+	
+	F.Data.DataTable.CreateFromSQL("dtRunID","con","SELECT TOP 1 RUNID FROM GCG_5862_KIT_RPT ORDER BY RUNID DESC",True)
+	F.Intrinsic.Control.If(V.DataTable.dtRunID.RowCount--,>,-1)
+		V.Local.iRunID.Set(V.DataTable.dtRunID(0).RUNID!FieldValFLoat)
+		V.Local.iRunID.Set(v.Local.iRunID.++)
+	F.Intrinsic.Control.Else
+		V.Local.iRunID.Set(1)
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.For(V.Local.iCnt,0,V.DataTable.dtCreateKit.RowCount--,1)
+		F.Intrinsic.String.Build("INSERT INTO GCG_5862_KIT_RPT (RUNID,PART,LOCATION,LOT,HEAT) VALUES ('{0}','{1}','{2}','{3}','{4}')",V.Local.iRunID,V.DataTable.dtCreateKit(v.Local.iCnt).PART!FieldVal,V.DataTable.dtCreateKit(v.Local.iCnt).LOCATION!FieldVal,V.DataTable.dtCreateKit(v.Local.iCnt).LOT!FieldVal,V.DataTable.dtCreateKit(v.Local.iCnt).HEAT!FieldVal,V.Local.sSQL)
+		F.ODBC.Connection!CON.Execute(v.Local.sSQL)
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+	
+	F.Global.BI.GetRunID(V.Local.iBIRunID)
+	F.Global.BI.StartLogging(V.Local.iBIRunID,V.Local.iRptID,0,"",V.Local.iBILogID)
+	
+'	V.Local.sParamNames.Set("EMPL*!*JOB*!*SUF*!*SEQ*!*CHARGE_DATE")
+'	F.Intrinsic.String.Build("{0}*!*{1}*!*{2}*!*{3}*!*{4}",V.Passed.009993,V.Passed.009990,V.Passed.009991,V.Passed.009992,V.Ambient.Date,V.Local.sParamValues)
+'	F.Global.BI.RunReportPreProcessor(V.Local.iBIRunID,V.Local.iBILogID,V.Local.sParamNames,V.Local.sParamValues,"",-1,True,"",-1,"",-1,"","",V.Local.iRet,)
+
+		
+'	V.Local.sParamNames.Set("PART*!*LOCATION*!*LOT*!*HEAT")
+'	F.Intrinsic.Control.For(v.Local.iCnt,0,V.DataTable.dtCreateKit.RowCount--,1)
+'		V.Local.sPart.Set(V.DataTable.dtCreateKit(V.Local.iCnt).PART!FieldValTrim)
+'		V.Local.sLocation.Set(V.DataTable.dtCreateKit(V.Local.iCnt).LOCATION!FieldValTrim)
+'		V.Local.sHeat.Set(V.DataTable.dtCreateKit(V.Local.iCnt).HEAT!FieldValTrim)
+'		V.Local.sLot.Set(V.DataTable.dtCreateKit(V.Local.iCnt).LOT!FieldValTrim)
+'		
+'		F.Intrinsic.Control.If(V.Local.iCnt,=,0)
+'			F.Intrinsic.String.Build("'{0}'",V.Local.sPart,V.Local.sPartParam)
+'			F.Intrinsic.String.Build("'{0}'",V.Local.sLocation, V.Local.sLocParam)
+'			F.Intrinsic.String.Build("'{0}'",V.Local.sLot, V.Local.sLotParam)
+'			F.Intrinsic.String.Build("'{0}'",V.Local.sHeat, V.Local.sHeatParam)
+'		F.Intrinsic.Control.Else
+'			F.Intrinsic.String.Build("{0},'{1}'",V.Local.sPartParam, V.Local.sPart,V.Local.sPartParam)
+'			F.Intrinsic.String.Build("{0},'{1}'",V.Local.sLocParam, V.Local.sLocation,V.Local.sLocParam)
+'			F.Intrinsic.String.Build("{0},'{1}'",V.Local.sLotParam, V.Local.sLot, V.Local.sLotParam)
+'			F.Intrinsic.String.Build("{0},'{1}'",V.Local.sHeatParam,v.Local.sHeat, V.Local.sHeatParam)
+'		F.Intrinsic.Control.EndIf
+'		
+'	F.Intrinsic.Control.Next(v.Local.iCnt)
+
+	V.Local.sParamNames.Set("RUN_ID")
+	
+	'F.Intrinsic.String.Build("{0}*!*{1}*!*{2}*!*{3}",V.Local.sPartParam, V.Local.sLocParam, V.Local.sLotParam, V.Local.sHeatParam,v.Local.sParamValues)
+	V.Local.sParamValues.Set(V.Local.iRunID)
+	
+	F.Global.BI.RunReportPreProcessor(V.Local.iBIRunID,V.Local.iBILogID,V.Local.sParamNames,V.Local.sParamValues,"",-1,True,"",-1,"",-1,"","",V.Local.iRet)
+'	F.Global.BI.RunReportPreProcessor(V.Local.iBIRunID,V.Local.iBILogID,"","","",-1,True,"",-1,"",-1,"","",V.Local.iRet)
+	F.Global.BI.StopLogging(V.Local.iBILogID)
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdPrint_Click.End
+
+Program.Sub.LoadDtCuredMatl.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	V.Local.sSQL.Declare
+	V.Local.sJob.Declare
+	V.Local.sSuffix.Declare
+	V.Local.sJS.Declare
+	V.Local.bFileExists.Declare
+	V.Local.sTempFile.Declare
+		
+	V.Global.bLoadData.Set(True)
+	
+	F.Intrinsic.String.Build("{0}\{1}_Job_Temp.txt",V.Caller.LocalGSSTempDir, V.Caller.Terminal, V.Local.sTempFile)
+	
+	F.Intrinsic.File.Exists(V.Local.sTempFile, V.Local.bFileExists)
+	F.Intrinsic.Control.If(V.Local.bFileExists,=,True)
+		F.Intrinsic.File.File2String(V.Local.sTempFile,V.Local.sJS)
+		'F.Intrinsic.File.DeleteFile(V.Local.sTempFile)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.UI.Msgbox("Must Select a job", "Job Missing")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.String.Split(V.Local.sJS,"-",V.Local.sJS)
+	
+	F.Intrinsic.Control.If(v.DataTable.dtCuredMatl.Exists)
+		F.Data.DataTable.Close("dtCuredMatl")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.String.Build("SELECT B.JOB, B.SUFFIX, B.SEQUENCE, RTRIM(A.PART) AS PART, RTRIM(A.LOCATION) AS LOCATION, RTRIM(A.LOT) AS LOT, RTRIM(B.BIN) AS BIN, RTRIM(A.HEAT) AS HEAT, RTRIM(B.SERIAL_NUMBER) AS SERIAL_NUMBER, B.QUANTITY * -1 AS QUANTITY, CAST(A.CURED AS BIT) AS CURED, C.QUANTITY AS QTY_REM, A.TOTAL_OT, A.ALLOWABLE_OT, D.COST FROM GCG_5862_KIT_MSTR A LEFT JOIN V_ITEM_HISTORY B ON A.PART = B.PART AND A.LOCATION = B.LOCATION AND A.LOT = B.LOT AND A.HEAT = B.HEAT LEFT JOIN V_ITEM_MASTER C ON A.PART = C.PART AND A.LOCATION = C.LOCATION AND A.LOT = C.LOT AND A.HEAT = C.HEAT AND B.BIN = C.BIN LEFT JOIN V_INVENTORY_COST D ON A.PART = D.PART AND A.LOCATION = D.LOCN WHERE B.JOB = '{0}' AND SUFFIX = '{1}' AND CODE_TRANSACTION = 'J55';", V.Local.sJS(0), V.Local.sJS(1),V.Local.sSQL)
+	
+	F.Data.DataTable.CreateFromSQL("dtCuredMatl","con",V.Local.sSQL,True)
+	
+	F.Data.DataTable.AddColumn("dtCuredMatl","DATE_DIFF",String)
+	
+	f.Intrinsic.Control.CallSub(UpdateCured)
+		
+	Gui.FrmCuredMatl..Show
+	
+	F.Intrinsic.Control.CallSub(LoadCuredMatlGV)
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.LoadDtCuredMatl.End
+
+Program.Sub.LoadCuredMatlGV.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+		
+	Gui.FrmCuredMatl.GsGcCuredMatl.AddGridviewFromDatatable("gvCuredMatl","dtCuredMatl")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SuspendLayout()
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetGridviewProperty("gvCuredMatl","AllowSort",True)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetGridviewProperty("gvCuredMatl","AllowFilter",True)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetGridviewProperty("gvCuredMatl","OptionsViewShowGroupPanel",True)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetGridviewProperty("gvCuredMatl","EnableAppearanceOddRow",True)
+	Gui.FrmCuredMatl.GsGcCuredMatl.BestFitColumns("gvCuredMatl")
+	
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","CURED","Caption","Cured")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","CURED","HeaderHAlignment","Center")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","CURED","HeaderFontBold",True)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","CURED","MinWidth","85")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","CURED","AllowEdit",False)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","CURED","ReadOnly",False)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","CURED","CellBackColor","LightYellow")
+	
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","JOB","Caption","Job")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","JOB","HeaderHAlignment","Center")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","JOB","HeaderFontBold",True)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","JOB","MinWidth","85")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","JOB","AllowEdit",False)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","JOB","ReadOnly",True)
+	
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","SUFFIX","Caption","Suffix")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","SUFFIX","HeaderHAlignment","Center")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","SUFFIX","HeaderFontBold",True)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","SUFFIX","MinWidth","85")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","SUFFIX","AllowEdit",False)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","SUFFIX","ReadOnly",True)
+	
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","SEQUENCE","Caption","Sequence")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","SEQUENCE","HeaderHAlignment","Center")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","SEQUENCE","HeaderFontBold",True)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","SEQUENCE","MinWidth","85")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","SEQUENCE","AllowEdit",False)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","SEQUENCE","ReadOnly",True)
+	
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","PART","Caption","Part")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","PART","HeaderHAlignment","Center")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","PART","HeaderFontBold",True)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","PART","MinWidth","85")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","PART","AllowEdit",False)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","PART","ReadOnly",True)
+
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","LOCATION","Caption","Location")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","LOCATION","HeaderHAlignment","Center")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","LOCATION","HeaderFontBold",True)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","LOCATION","MinWidth","85")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","LOCATION","AllowEdit",False)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","LOCATION","ReadOnly",True)
+	
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","LOT","Caption","Lot")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","LOT","HeaderHAlignment","Center")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","LOT","HeaderFontBold",True)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","LOT","MinWidth","85")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","LOT","AllowEdit",False)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","LOT","ReadOnly",True)
+	
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","BIN","Caption","Bin")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","BIN","HeaderHAlignment","Center")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","BIN","HeaderFontBold",True)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","BIN","MinWidth","85")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","BIN","AllowEdit",False)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","BIN","ReadOnly",True)
+	
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","HEAT","Caption","Heat")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","HEAT","HeaderHAlignment","Center")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","HEAT","HeaderFontBold",True)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","HEAT","MinWidth","85")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","HEAT","AllowEdit",False)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","HEAT","ReadOnly",True)
+	
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","SERIAL_NUMBER","Caption","Serial Number")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","SERIAL_NUMBER","HeaderHAlignment","Center")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","SERIAL_NUMBER","HeaderFontBold",True)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","SERIAL_NUMBER","MinWidth","85")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","SERIAL_NUMBER","AllowEdit",False)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","SERIAL_NUMBER","ReadOnly",True)
+	
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","QUANTITY","Caption","Quantity")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","QUANTITY","HeaderHAlignment","Center")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","QUANTITY","HeaderFontBold",True)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","QUANTITY","MinWidth","85")
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","QUANTITY","AllowEdit",False)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","QUANTITY","ReadOnly",True)
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","QUANTITY","DisplayCustomNumeric","###,##0.00000")
+	
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","QTY_REM","Visible",False)
+	
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","TOTAL_OT","Visible",False)
+	
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","ALLOWABLE_OT","Visible",False)
+	
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","COST","Visible",False)
+	
+	Gui.FrmCuredMatl.GsGcCuredMatl.SetColumnProperty("gvCuredMatl","DATE_DIFF","Visible",False)
+
+	Gui.FrmCuredMatl.GsGcCuredMatl.ResumeLayout()
+	Gui.FrmCuredMatl.GsGcCuredMatl.MainView("gvCuredMatl")
+
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.LoadCuredMatlGV.End
+
+Program.Sub.FrmCuredMatl_UnLoad.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	F.Intrinsic.Control.If(V.Global.bUnload,=,True)
+		F.Intrinsic.Control.CallSub(FrmExposeMgmt_Unload)
+	F.Intrinsic.Control.EndIf
+	
+	Gui.FrmManExp..Visible(False)
+
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.FrmCuredMatl_UnLoad.End
+
+Program.Sub.GsGcCuredMatl_CellValueChanged.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	V.Local.iRet.Declare
+	V.Local.sSQL.Declare
+	V.Local.sCured.Declare
+	V.Local.sPart.Declare
+	V.Local.sLoc.Declare
+	V.Local.sLot.Declare
+	V.Local.sHeat.Declare
+	v.Local.sBin.Declare
+	V.Local.sDateNow.Declare
+	V.Local.sDate.Declare
+	V.Local.sDateDiff.Declare
+	V.Local.sQtyRem.Declare
+	V.Local.sTot.Declare
+	V.Local.sAllow.Declare
+	
+	'Function.Intrinsic.Debug.Stop
+	
+	F.Intrinsic.Control.SelectCase(V.Args.Column.UCase)
+
+	
+		F.Intrinsic.Control.Case("CURED")
+			f.Intrinsic.UI.InvokeWaitDialog("Curing...")
+			Gui.FrmCuredMatl.GsGcCuredMatl.GetCellValueByColumnName("gvCuredMatl","CURED",v.Args.RowIndex,V.Local.iRet)
+			Gui.FrmCuredMatl.GsGcCuredMatl.GetCellValueByColumnName("gvCuredMatl","PART",v.Args.RowIndex,V.Local.sPart)
+			Gui.FrmCuredMatl.GsGcCuredMatl.GetCellValueByColumnName("gvCuredMatl","LOCATION",v.Args.RowIndex,V.Local.sLoc)
+			Gui.FrmCuredMatl.GsGcCuredMatl.GetCellValueByColumnName("gvCuredMatl","LOT",v.Args.RowIndex,V.Local.sLot)
+			Gui.FrmCuredMatl.GsGcCuredMatl.GetCellValueByColumnName("gvCuredMatl","HEAT",v.Args.RowIndex,V.Local.sHeat)
+			V.Local.sQtyRem.Set(V.DataTable.dtCuredMatl(V.Args.RowIndex).QTY_REM!FieldValFloat)
+			
+			F.Intrinsic.Control.If(v.Local.iRet,=,1)
+				gui.FrmCuredMatl.GsGcCuredMatl.SetCellValueByColumnName("gvCuredMatl","CURED",v.Args.RowIndex,V.Local.iRet)
+				f.Intrinsic.UI.CloseWaitDialog
+				F.Intrinsic.Control.ExitSub
+			F.Intrinsic.Control.Else
+			F.Intrinsic.Math.Add(V.DataTable.dtCuredMatl(V.Args.RowIndex).TOTAL_OT!FieldValFLoat,V.DataTable.dtCuredMatl(V.Args.RowIndex).DATE_DIFF!FieldValFLoat,v.Local.sTot)
+			V.Local.sDateDiff.Set(V.DataTable.dtCuredMatl(V.Args.RowIndex).DATE_DIFF!FieldValFLoat)
+			v.Local.sAllow.Set(V.DataTable.dtCuredMatl(V.Args.RowIndex).ALLOWABLE_OT!FieldValFLoat)
+			F.Intrinsic.String.Build("SELECT * FROM GCG_5862_KIT_MSTR WHERE PART = '{0}' AND LOCATION = '{1}' AND LOT = '{2}'  AND HEAT = '{3}'", v.Local.sPart.RTrim, V.Local.sLoc.RTrim, V.Local.sLot.RTrim, V.Local.sHeat.RTrim, V.Local.sSQL)
+			F.Intrinsic.Control.If(v.DataTable.dtCured.Exists)
+				F.Data.DataTable.Close("dtCured")
+			F.Intrinsic.Control.EndIf
+			F.Data.DataTable.CreateFromSQL("dtCured","con",V.Local.sSQL)
+				F.Intrinsic.Control.If(V.DataTable.dtCured.RowCount--,>,-1)
+					Gui.FrmCuredMatl.GsGcCuredMatl.SetCellValueByColumnName("gvCuredMatl","CURED",V.Args.RowIndex,True)
+					V.Local.sCured.Set(1)
+					F.Intrinsic.String.Build("UPDATE GCG_5862_KIT_MSTR SET CURED = '{0}' WHERE PART = '{1}' AND LOCATION = '{2}' AND LOT = '{3}'  AND HEAT = '{4}'",v.Local.sCured,v.DataTable.dtCuredMatl(V.Args.RowIndex).PART!FieldValTrim,v.DataTable.dtCuredMatl(v.Args.RowIndex).LOCATION!FieldValTrim,v.DataTable.dtCuredMatl(v.Args.RowIndex).LOT!FieldValTrim,v.DataTable.dtCuredMatl(v.Args.RowIndex).HEAT!FieldValTrim,V.Local.sSQL)
+					F.ODBC.Connection!con.Execute(V.Local.sSQL)
+					F.Intrinsic.String.Build("UPDATE GCG_5862_KIT_MSTR SET TOTAL_OT = '{0}' WHERE PART = '{1}' AND LOCATION = '{2}' AND LOT = '{3}'  AND HEAT = '{4}'",v.Local.sTot,v.DataTable.dtCuredMatl(V.Args.RowIndex).PART!FieldValTrim,v.DataTable.dtCuredMatl(v.Args.RowIndex).LOCATION!FieldValTrim,v.DataTable.dtCuredMatl(v.Args.RowIndex).LOT!FieldValTrim,v.DataTable.dtCuredMatl(v.Args.RowIndex).HEAT!FieldValTrim,V.Local.sSQL)
+					F.ODBC.Connection!con.Execute(V.Local.sSQL)
+					F.Intrinsic.String.Build("INSERT INTO GCG_5862_EXP_TIME (PART,LOCATION,LOT,HEAT,TRANS_DATETIME,TRANS_ACTION,TRANS_DESCRIPTION,MANUAL_TIME,ADDED_DATETIME,ADDED_USER) VALUES ('{0}','{1}','{2}','{3}',CURDATE(),'CURED','CURED','{4}',CURTIME(),'{5}')",V.Local.sPart.RTrim,V.Local.sLoc.RTrim,V.Local.sLot.RTrim,V.Local.sHeat.RTrim,V.Local.sDateDiff,V.Caller.User,v.Local.sSQL)
+					F.ODBC.Connection!con.Execute(V.Local.sSQL)
+				F.Intrinsic.Control.Else
+					Gui.FrmCuredMatl.GsGcCuredMatl.SetCellValueByColumnName("gvCuredMatl","CURED",V.Args.RowIndex,True)
+					V.Local.sCured.Set(1)
+					F.Intrinsic.String.Build("INSERT INTO GCG_5862_KIT_MSTR (PART,LOCATION,LOT,HEAT,ALLOWABLE_OT,TOTAL_OT,CURED) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}',1)",V.Local.sPart.RTrim,V.Local.sLoc.RTrim,V.Local.sLot.RTrim,V.Local.sHeat.RTrim,V.Local.sAllow,V.Local.sTot,v.Local.sSQL)
+					F.ODBC.Connection!con.Execute(V.Local.sSQL)
+					F.Intrinsic.String.Build("INSERT INTO GCG_5862_EXP_TIME (PART,LOCATION,LOT,HEAT,TRANS_DATETIME,TRANS_ACTION,TRANS_DESCRIPTION,MANUAL_TIME,ADDED_DATETIME,ADDED_USER) VALUES ('{0}','{1}','{2}','{3}',CURDATE(),'CURED','CURED','{4}',CURTIME(),'{5}')",V.Local.sPart.RTrim,V.Local.sLoc.RTrim,V.Local.sLot.RTrim,V.Local.sHeat.RTrim,V.Local.sTot,V.Caller.User,v.Local.sSQL)
+					F.ODBC.Connection!con.Execute(V.Local.sSQL)
+					F.Intrinsic.String.Build("INSERT INTO ITEM_MASTER (PART,LOCATION,LOT,HEAT,BIN,SERIAL_NUMBER,QUANTITY) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}',0)",V.Local.sPart,V.Local.sLoc,V.Local.sLot,V.Local.sHeat,V.Local.sBin,V.DataTable.dtCuredMatl(V.Args.RowIndex).SERIAL_NUMBER!FieldVal,v.Local.sSQL)
+					F.ODBC.Connection!con.Execute(V.Local.sSQL)
+				F.Intrinsic.Control.EndIf
+				
+			F.Intrinsic.Control.EndIf
+			f.Intrinsic.UI.CloseWaitDialog
+		F.Intrinsic.Control.EndSelect	
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.GsGcCuredMatl_CellValueChanged.End
+
+Program.Sub.cmdUpload_Click.Start
+	V.Local.iWS.Declare
+	V.Local.iR.Declare
+	V.Local.iC.Declare
+	V.Local.iRowCount.Declare
+	V.Local.sSQL.Declare
+	V.Local.sFile.Declare
+	V.Local.sWorksheets.Declare
+	V.Local.sRows.Declare
+	V.Local.sColumns.Declare
+	V.Local.sValues.Declare
+	V.Local.sPreparedColumns.Declare
+	V.Local.sPreparedValues.Declare
+	V.Local.iUBound.Declare
+	V.Local.sRet.Declare
+	V.Local.sError.Declare
+	V.Local.sErrorFile.Declare
+	V.Local.bFileExists.Declare
+	
+	'Ask the user for a file to process...
+	F.Intrinsic.UI.ShowOpenFileDialog("","*.*",524288,V.Local.sFile)
+	
+	F.Intrinsic.Control.If(V.Local.sFile,=,"***CANCEL***")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	
+	'Always good to let the user know that something is happening...
+	F.Intrinsic.UI.InvokeWaitDialog("Please Wait....","Uploading")
+	
+	'Setup a file for logging SQL command errors later.  That way we can view the ones that caused a problem while
+	'ignoring the ones that ran fine.
+	F.Intrinsic.String.Build("{0}{1}_ExcelUniversalImport_Errors.txt",V.Caller.LocalGSSTempDir,V.Ambient.Cuser,V.Local.sErrorFile)
+	F.Intrinsic.File.Exists(V.Local.sErrorFile,V.Local.bFileExists)
+	F.Intrinsic.Control.If(V.Local.bFileExists)
+		F.Intrinsic.File.DeleteFile(V.Local.sErrorFile)
+		F.Intrinsic.File.String2File(v.Local.sErrorFile,"")
+	f.Intrinsic.Control.Else
+		F.Intrinsic.File.String2File(v.Local.sErrorFile,"")
+	F.Intrinsic.Control.EndIf
+	
+	F.Automation.MSExcel.CreateAppObject("File")
+	F.Automation.MSExcel.OpenWorkbook("File","Workbook",V.Local.sFile)
+	F.Automation.MSExcel.EnumerateWorksheets("Workbook",V.Local.sWorksheets)
+	
+	'Worksheets...
+	F.Intrinsic.String.Split(V.Local.sWorksheets,"*!*",V.Local.sWorksheets)
+	F.Intrinsic.Control.For(V.Local.iWS,0,V.Local.sWorksheets.UBound,1)
+		
+		F.Automation.MSExcel.OpenWorksheet("Workbook",V.Local.sWorksheets(V.Local.iWS),1)
+		F.Automation.MSExcel.RowCount(V.Local.sWorksheets(V.Local.iWS),V.Local.iRowCount)
+		
+		'Rows
+		F.Intrinsic.Control.For(V.Local.iR,1,V.Local.iRowCount,1)
+			'Initialize...
+			V.Local.iC.Set(0)
+			
+			'Columns...
+			'Will read up to 16384 columns since that's what Excel supports...
+			'Only going to do this on the first row...
+			F.Intrinsic.Control.If(V.Local.iR,=,1)
+				F.Intrinsic.Control.For(V.Local.iC,1,16384,1)
+					
+					'Reach each cell, column by column...
+					F.Automation.MSExcel.ReadCell(V.Local.sWorksheets(V.Local.iWS),V.Local.iR,V.Local.iC,V.Local.sRet)
+					
+					'Loop until the cell value is blank, at which point we'll assume there are no more columns used
+					F.Intrinsic.Control.If(V.Local.sRet.Trim,=,"")
+						F.Intrinsic.Control.ExitFor(V.Local.iC)
+					F.Intrinsic.Control.EndIf
+					
+					'If we got here, the column wasn't blank and we're gonna build a list of the values in the cells
+					'On row one, here...  this is an indexed list of columns that we'll be uploading data into...
+					F.Intrinsic.String.Build("{0}*!*{1}",V.Local.sColumns,V.Local.sRet,V.Local.sColumns)
+					
+				F.Intrinsic.Control.Next(V.Local.iC)
+				
+				'We have a list of column headers, aka Field Names in the Table
+				F.Intrinsic.String.Replace(V.Local.sColumns,"*!*",",",V.Local.sPreparedColumns)
+				'Getting rid of the preceeding ","
+				F.Intrinsic.String.Mid(V.Local.sPreparedColumns,2,V.Local.sPreparedColumns.Length,V.Local.sPreparedColumns)
+				f.Intrinsic.String.Build("TRANS_DATETIME,ADDED_DATETIME,TRANS_ACTION,{0}",v.Local.sPreparedColumns,V.Local.sPreparedColumns)
+				'Getting rid of the preceeding "*!*"
+				F.Intrinsic.String.Mid(V.Local.sColumns,4,V.Local.sColumns.Length,V.Local.sColumns)
+				'Make it an array...
+				F.Intrinsic.String.Split(V.Local.sColumns,"*!*",V.Local.sColumns)
+						
+			'Columns...
+			'This is row 2 and beyond, so data...
+			F.Intrinsic.Control.Else
+				
+				'Have to redimension the array accordingly...
+				F.Intrinsic.Math.Add(V.Local.sColumns.UBound,1,V.Local.iUBound)
+				V.Local.sValues.Redim(V.Local.sColumns.LBound,V.Local.iUBound)
+				
+				'Read row by row, using sColumns(x) to build SQL statements
+				F.Intrinsic.Control.For(V.Local.iC,1,V.Local.sValues.UBound,1)
+					
+					'Read that cell data, boiii...
+					F.Automation.MSExcel.ReadCell(V.Local.sWorksheets(V.Local.iWS),V.Local.iR,V.Local.iC,V.Local.sValues(V.Local.iC))
+					
+				F.Intrinsic.Control.Next(V.Local.iC)
+				
+				'Columns/values read, build SQL
+				V.Local.iC.Set(0)
+				V.Local.sSQL.Set("")
+				F.Intrinsic.Control.For(V.Local.iC,1,V.Local.sValues.UBound,1)
+					'Building SQL...
+					F.Intrinsic.Control.If(V.Local.iC,=,1)
+						'First iteration...
+						'begin assembling SQL command...
+						F.Intrinsic.String.Build("INSERT INTO GCG_5862_EXP_TIME ({0}) values",V.Local.sPreparedColumns,V.Local.sSQL)
+						'add first prepared value...
+						F.Intrinsic.String.Build("CURDATE(),CURTIME(),'UPLOAD','{0}'",V.Local.sValues(V.Local.iC),V.Local.sPreparedValues)
+					F.Intrinsic.Control.Else
+						'continue appending prepared values
+						F.Intrinsic.String.Build("{0},'{1}'",V.Local.sPreparedValues,V.Local.sValues(V.Local.iC),V.Local.sPreparedValues)
+					F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.Next(V.Local.iC)
+				
+				'Adding values to the SQL command...
+				F.Intrinsic.String.Build("{0} ({1})",V.Local.sSQL,V.Local.sPreparedValues,V.Local.sSQL)
+				
+				F.Intrinsic.Control.Try
+				V.Local.sError.Set("")
+
+					F.ODBC.Connection!con.Execute(V.Local.sSQL)
+
+				F.Intrinsic.Control.Catch
+					'write problematic SQL statments to the error log...
+					F.Intrinsic.String.Build("{0}{2}{1}{2}{2}",V.Ambient.ErrorDescription,V.Local.sSQL,V.Ambient.NewLine,V.Local.sError)
+					F.Intrinsic.File.Append2File(V.Local.sErrorFile,V.Local.sError)
+				F.Intrinsic.Control.EndTry
+				
+			F.Intrinsic.Control.EndIf
+			
+		F.Intrinsic.Control.Next(V.Local.iR)
+		
+		'closing worksheet...
+		F.Automation.Generic.DestroyObject(V.Local.sWorksheets(V.Local.iWS))
+	
+	'onto the next worksheet...
+	F.Intrinsic.Control.Next(V.Local.iWS)
+		
+	'all done with worksheets...  destroy remaining objects (essentially closing the instances of excel)
+	F.Automation.Generic.DestroyObject("Workbook")
+	F.Automation.Generic.DestroyObject("File")
+	F.Intrinsic.File.Append2File(V.Local.sErrorFile,"End of Error List")
+	F.Intrinsic.UI.CloseWaitDialog
+	
+	F.Intrinsic.Task.ShellExec("","open",V.Local.sErrorFile,"",V.Caller.TempDir,1)
+Program.Sub.cmdUpload_Click.End
+
+Program.Sub.cmdUploadPart_Click.Start
+	V.Local.iWS.Declare
+	V.Local.iR.Declare
+	V.Local.iC.Declare
+	V.Local.iRowCount.Declare
+	V.Local.sSQL.Declare
+	V.Local.sFile.Declare
+	V.Local.sWorksheets.Declare
+	V.Local.sRows.Declare
+	V.Local.sColumns.Declare
+	V.Local.sValues.Declare
+	V.Local.sPreparedColumns.Declare
+	V.Local.sPreparedValues.Declare
+	V.Local.iUBound.Declare
+	V.Local.sRet.Declare
+	V.Local.sError.Declare
+	V.Local.sErrorFile.Declare
+	V.Local.bFileExists.Declare
+	V.Local.sTemp.Declare
+	
+	'Ask the user for a file to process...
+	F.Intrinsic.UI.ShowOpenFileDialog("","*.*",524288,V.Local.sFile)
+	
+	F.Intrinsic.Control.If(V.Local.sFile,=,"***CANCEL***")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	
+	'Always good to let the user know that something is happening...
+	F.Intrinsic.UI.InvokeWaitDialog("Please Wait....","Uploading")
+	
+	'Setup a file for logging SQL command errors later.  That way we can view the ones that caused a problem while
+	'ignoring the ones that ran fine.
+	F.Intrinsic.String.Build("{0}{1}_ExcelUniversalImport_Errors.txt",V.Caller.LocalGSSTempDir,V.Ambient.Cuser,V.Local.sErrorFile)
+	F.Intrinsic.File.Exists(V.Local.sErrorFile,V.Local.bFileExists)
+	F.Intrinsic.Control.If(V.Local.bFileExists)
+		F.Intrinsic.File.DeleteFile(V.Local.sErrorFile)
+		F.Intrinsic.File.String2File(v.Local.sErrorFile,"")
+	f.Intrinsic.Control.Else
+		F.Intrinsic.File.String2File(v.Local.sErrorFile,"")
+	F.Intrinsic.Control.EndIf
+	
+	F.Automation.MSExcel.CreateAppObject("File")
+	F.Automation.MSExcel.OpenWorkbook("File","Workbook",V.Local.sFile)
+	F.Automation.MSExcel.EnumerateWorksheets("Workbook",V.Local.sWorksheets)
+	
+	'Worksheets...
+	F.Intrinsic.String.Split(V.Local.sWorksheets,"*!*",V.Local.sWorksheets)
+	F.Intrinsic.Control.For(V.Local.iWS,0,V.Local.sWorksheets.UBound,1)
+		
+		F.Automation.MSExcel.OpenWorksheet("Workbook",V.Local.sWorksheets(V.Local.iWS),1)
+		F.Automation.MSExcel.RowCount(V.Local.sWorksheets(V.Local.iWS),V.Local.iRowCount)
+		
+		'Rows
+		F.Intrinsic.Control.For(V.Local.iR,1,V.Local.iRowCount,1)
+			'Initialize...
+			V.Local.iC.Set(0)
+			
+			'Columns...
+			'Will read up to 16384 columns since that's what Excel supports...
+			'Only going to do this on the first row...
+			F.Intrinsic.Control.If(V.Local.iR,=,1)
+				F.Intrinsic.Control.For(V.Local.iC,1,16384,1)
+					
+					'Reach each cell, column by column...
+					F.Automation.MSExcel.ReadCell(V.Local.sWorksheets(V.Local.iWS),V.Local.iR,V.Local.iC,V.Local.sRet)
+					
+					'Loop until the cell value is blank, at which point we'll assume there are no more columns used
+					F.Intrinsic.Control.If(V.Local.sRet.Trim,=,"")
+						F.Intrinsic.Control.ExitFor(V.Local.iC)
+					F.Intrinsic.Control.EndIf
+					
+					'If we got here, the column wasn't blank and we're gonna build a list of the values in the cells
+					'On row one, here...  this is an indexed list of columns that we'll be uploading data into...
+					F.Intrinsic.String.Build("{0}*!*{1}",V.Local.sColumns,V.Local.sRet,V.Local.sColumns)
+					
+				F.Intrinsic.Control.Next(V.Local.iC)
+				
+				'We have a list of column headers, aka Field Names in the Table
+				F.Intrinsic.String.Replace(V.Local.sColumns,"*!*",",",V.Local.sPreparedColumns)
+				'Getting rid of the preceeding ","
+				F.Intrinsic.String.Mid(V.Local.sPreparedColumns,2,V.Local.sPreparedColumns.Length,V.Local.sPreparedColumns)
+				f.Intrinsic.String.Build("TOTAL_OT,CURED,{0}",v.Local.sPreparedColumns,V.Local.sPreparedColumns)
+				'Getting rid of the preceeding "*!*"
+				F.Intrinsic.String.Mid(V.Local.sColumns,4,V.Local.sColumns.Length,V.Local.sColumns)
+				'Make it an array...
+				F.Intrinsic.String.Split(V.Local.sColumns,"*!*",V.Local.sColumns)
+						
+			'Columns...
+			'This is row 2 and beyond, so data...
+			F.Intrinsic.Control.Else
+				
+				'Have to redimension the array accordingly...
+				F.Intrinsic.Math.Add(V.Local.sColumns.UBound,1,V.Local.iUBound)
+				V.Local.sValues.Redim(V.Local.sColumns.LBound,V.Local.iUBound)
+				
+				'Read row by row, using sColumns(x) to build SQL statements
+				F.Intrinsic.Control.For(V.Local.iC,1,V.Local.sValues.UBound,1)
+					
+					'Read that cell data, boiii...
+					F.Automation.MSExcel.ReadCell(V.Local.sWorksheets(V.Local.iWS),V.Local.iR,V.Local.iC,V.Local.sValues(V.Local.iC))
+					
+				F.Intrinsic.Control.Next(V.Local.iC)
+				
+				'Columns/values read, build SQL
+				V.Local.iC.Set(0)
+				V.Local.sSQL.Set("")
+				F.Intrinsic.Control.For(V.Local.iC,1,V.Local.sValues.UBound,1)
+					'Building SQL...
+					F.Intrinsic.Control.If(V.Local.iC,=,1)
+						'First iteration...
+						'begin assembling SQL command...
+						F.Intrinsic.String.Build("INSERT INTO GCG_5862_KIT_MSTR ({0}) values",V.Local.sPreparedColumns,V.Local.sSQL)
+						'add first prepared value...
+						F.Intrinsic.String.Build("0,0,'{0}'",V.Local.sValues(V.Local.iC),V.Local.sPreparedValues)
+					F.Intrinsic.Control.Else
+						'continue appending prepared values
+						F.Intrinsic.String.Build("{0},'{1}'",V.Local.sPreparedValues,V.Local.sValues(V.Local.iC),V.Local.sPreparedValues)
+					F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.Next(V.Local.iC)
+				
+				'Adding values to the SQL command...
+				F.Intrinsic.String.Build("{0} ({1})",V.Local.sSQL,V.Local.sPreparedValues,V.Local.sSQL)
+				
+				F.Intrinsic.Control.Try
+				V.Local.sError.Set("")
+				F.Intrinsic.String.Build("Select * from GCG_5862_KIT_MSTR where part = '{0}' and LOCATION = '{1}' AND LOT = '{2}' AND HEAT  = '{3}'",V.Local.sValues(1),V.Local.sValues(2),V.Local.sValues(3),V.Local.sValues(4),V.Local.sTemp)
+				F.Intrinsic.Control.If(V.DataTable.dtUpload.Exists)
+					F.Data.DataTable.Close("dtUpload")
+				F.Intrinsic.Control.EndIf
+				F.Data.DataTable.CreateFromSQL("dtUpload","con",V.Local.sTemp,True)
+				
+				F.Intrinsic.String.Build("Select * from ITEM_MASTER WHERE PART = '{0}' AND LOCATION = '{1}' AND LOT = '{2}' AND HEAT  = '{3}'",V.Local.sValues(1),V.Local.sValues(2),V.Local.sValues(3),V.Local.sValues(4),V.Local.sTemp)
+				f.Intrinsic.Control.If(v.DataTable.dtItemUPL.Exists)
+					F.Data.DataTable.Close("dtItemUPL")
+				f.Intrinsic.Control.EndIf
+				F.Data.DataTable.CreateFromSQL("dtItemUPL","con",V.Local.sTemp,True)
+				
+				F.Intrinsic.Control.If(V.DataTable.dtUpload.RowCount--,=,-1,AND,V.DataTable.dtItemUPL.RowCount--,>,0)
+					F.ODBC.Connection!con.Execute(V.Local.sSQL)
+					'F.Intrinsic.String.Build("INSERT INTO GCG_5862_EXP_TIME (PART, LOCATION, LOT, HEAT, TRANS_DATETIME, TRANS_ACTION ,TRANS_DESCRIPTION, MANUAL_TIME, ADDED_DATETIME, ADDED_USER) VALUES ('{0}','{1}','{2}','{3}',CURDATE(),'Upload','Manual Part Upload','0',CURTIME(),'{4}')")
+				F.Intrinsic.Control.Else	
+					F.Intrinsic.String.Build("Part {0} does not exist in the Item Master with lot '{1}' and heat '{2}'",V.Local.sValues(1),V.Local.sValues(3),V.Local.sValues(4),v.Local.sTemp)
+					F.Intrinsic.File.Append2File(V.Local.sErrorFile,v.Local.sTemp)
+				F.Intrinsic.Control.EndIf
+						
+				F.Intrinsic.Control.Catch
+					'write problematic SQL statments to the error log...
+					F.Intrinsic.String.Build("{0}{2}{1}{2}{2}",V.Ambient.ErrorDescription,V.Local.sSQL,V.Ambient.NewLine,V.Local.sError)
+					F.Intrinsic.File.Append2File(V.Local.sErrorFile,V.Local.sError)
+				F.Intrinsic.Control.EndTry
+				
+			F.Intrinsic.Control.EndIf
+			
+		F.Intrinsic.Control.Next(V.Local.iR)
+		
+		'closing worksheet...
+		F.Automation.Generic.DestroyObject(V.Local.sWorksheets(V.Local.iWS))
+	
+	'onto the next worksheet...
+	F.Intrinsic.Control.Next(V.Local.iWS)
+		
+	'all done with worksheets...  destroy remaining objects (essentially closing the instances of excel)
+	F.Automation.Generic.DestroyObject("Workbook")
+	F.Automation.Generic.DestroyObject("File")
+	F.Intrinsic.File.Append2File(V.Local.sErrorFile,"End of Error List")
+	F.Intrinsic.UI.CloseWaitDialog
+	
+	F.Intrinsic.Task.ShellExec("","open",V.Local.sErrorFile,"",V.Caller.TempDir,1)
+Program.Sub.cmdUploadPart_Click.End
+
+Program.Sub.UpdateCured.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	V.Local.iRet.Declare
+	V.Local.sSQL.Declare
+	V.Local.sCured.Declare
+	V.Local.sPart.Declare
+	V.Local.sLoc.Declare
+	V.Local.sLot.Declare
+	V.Local.sHeat.Declare
+	V.Local.iCnt.Declare
+	V.Local.sQtyRem.Declare
+	V.Local.sAllow.Declare
+	V.Local.sTot.Declare
+	V.Local.sBin.Declare
+	V.Local.sSerial.Declare
+	V.Local.sCost.Declare
+	V.Local.iIncr.Declare
+	V.Local.sDateNow.Declare
+	V.Local.sDate.Declare
+	V.Local.sDateDiff.Declare
+	V.Local.sBinList.Declare
+	V.Local.iRow.Declare
+	V.Local.sCuredFlag.Declare
+	'Function.Intrinsic.Debug.InvokeDebugger
+	'Function.Intrinsic.Debug.Stop
+	v.Local.bCuredFlagNew.Declare
+	F.Intrinsic.Control.If(V.DataTable.dtFreezerBin.Exists)
+		F.Data.DataTable.Close("dtFreezerBin")
+	F.Intrinsic.Control.EndIf
+		
+	F.Data.DataTable.CreateFromSQL("dtFreezerBin","con","SELECT BIN FROM GCG_5862_FREEZER_BIN WHERE IS_FREEZER = 1",True)
+		
+	F.Intrinsic.Control.If(V.DataTable.dtFreezerBin.RowCount--,>,-1)
+		F.Intrinsic.Control.For(V.Local.iCnt,0,V.DataTable.dtFreezerBin.RowCount--,1)
+			F.Intrinsic.Control.If(V.Local.iCnt,=,0)
+				F.Intrinsic.String.Build("'{0}'",V.DataTable.dtFreezerBin(v.Local.iCnt).BIN!FieldVal,V.Local.sBinList)
+			F.Intrinsic.Control.Else
+				F.Intrinsic.String.Build("{0},'{1}'",V.Local.sBinList,V.DataTable.dtFreezerBin(V.Local.iCnt).BIN!FieldVal,V.Local.sBinList)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Next(V.Local.iCnt)
+	F.Intrinsic.Control.Else
+		V.Local.sBin.Set("'FREEZE'")
+	F.Intrinsic.Control.EndIf
+	
+	V.Local.iRow.Set(V.DataTable.dtCuredMatl.RowCount--)
+	
+	F.Intrinsic.Control.For(V.Local.iCnt,0,v.Local.iRow,1)
+		F.Intrinsic.Control.If(v.Local.sPart,<>,V.DataTable.dtCuredMatl(v.Local.iCnt).PART!FieldVal)
+			v.Local.iIncr.Set(1)
+		F.Intrinsic.Control.Else
+			V.Local.iIncr.Set(V.Local.iIncr.++)
+		F.Intrinsic.Control.EndIf
+		V.Local.sPart.Set(V.DataTable.dtCuredMatl(V.Local.iCnt).PART!FieldVal)
+		V.Local.sLoc.Set(V.DataTable.dtCuredMatl(V.Local.iCnt).LOCATION!FieldVal)
+		V.Local.sLot.Set(V.DataTable.dtCuredMatl(V.Local.iCnt).LOT!FieldVal)
+		V.Local.sBin.Set(V.DataTable.dtCuredMatl(V.Local.iCnt).BIN!FieldVal)
+		V.Local.sAllow.Set(V.DataTable.dtCuredMatl(V.Local.iCnt).ALLOWABLE_OT!FieldValFloat)
+		V.Local.sTot.Set(V.DataTable.dtCuredMatl(V.Local.iCnt).TOTAL_OT!FieldValFloat)
+		V.Local.sSerial.Set(V.DataTable.dtCuredMatl(V.Local.iCnt).SERIAL_NUMBER!FieldVal)
+		V.Local.sCost.Set(V.DataTable.dtCuredMatl(V.Local.iCnt).COST!FieldValFloat)
+		V.Local.sQtyRem.Set(V.DataTable.dtCuredMatl(V.Local.iCnt).QTY_REM!FieldValFloat)
+		V.Local.sHeat.Set(V.DataTable.dtCuredMatl(V.Local.iCnt).HEAT!FieldVal)
+		'F.Intrinsic.String.Build("UPDATE GCG_5862_KIT_MSTR SET CURED = 1 WHERE PART = '{0}' AND LOCATION = '{1}' AND LOT = '{2}'  AND HEAT = '{3}'",v.Local.sPart.RTrim,V.Local.sLoc.RTrim,V.Local.sLot.RTrim,V.Local.sHeat.RTrim,V.Local.sSQL)
+		'F.ODBC.Connection!con.Execute(V.Local.sSQL)
+		
+		F.Intrinsic.String.Build("SELECT TOP 1 RTRIM(A.PART) AS PART, RTRIM(A.LOCATION) AS LOCATION, RTRIM(A.LOT) AS LOT, RTRIM(A.HEAT) AS HEAT, A.DATE_HISTORY, A.TIME_ITEM_HISTORY, B.CURED FROM V_ITEM_HISTORY A LEFT JOIN GCG_5862_KIT_MSTR B ON A.PART = B.PART AND A.LOCATION = B.LOCATION AND A.LOT = B.LOT AND A.HEAT = B.HEAT WHERE A.CODE_TRANSACTION = '190' AND A.PART = '{0}' AND A.LOCATION = '{1}' AND A.LOT = '{2}' AND A.HEAT = '{3}' AND A.BIN NOT IN ({4}) ORDER BY DATE_HISTORY DESC, TIME_ITEM_HISTORY DESC",v.Local.sPart,V.Local.sLoc,v.Local.sLot,V.Local.sHeat,V.Local.sBinList,v.Local.sSQL)
+		F.Intrinsic.Control.If(V.DataTable.dtTransfer.Exists)
+			F.Data.DataTable.Close("dtTransfer")
+		F.Intrinsic.Control.EndIf
+		F.Data.DataTable.CreateFromSQL("dtTransfer","con",v.Local.sSQL,True)
+		
+		F.Intrinsic.Control.If(V.DataTable.dtTransfer.RowCount--,>,-1)
+			F.Intrinsic.String.Build("{0} {1}",V.DataTable.dtTransfer(0).DATE_HISTORY!FieldVal,V.DataTable.dtTransfer(0).TIME_ITEM_HISTORY!FieldVal,V.Local.sDate)
+					
+			F.Intrinsic.String.Build("{0} {1}",V.Ambient.Date,V.Ambient.Time,V.Local.sDateNow)
+					
+			F.Intrinsic.Date.DateDiff("n",V.Local.sDate,v.Local.sDateNow,v.Local.sDateDiff)
+			
+			F.Intrinsic.Math.Div(V.Local.sDateDiff,60,V.Local.sDateDiff)
+		F.Intrinsic.Control.Else
+			V.Local.sDateDiff.Set(V.DataTable.dtCuredMatl(v.Local.iCnt).TOTAL_OT!FieldValFloat)
+		F.Intrinsic.Control.EndIf
+		
+		F.Intrinsic.Control.If(V.Local.sQtyRem,>,0)
+			V.Local.sHeat.Set(V.DataTable.dtCuredMatl(V.Local.iCnt).HEAT!FieldVal)
+			F.Intrinsic.Control.If(V.Local.sHeat.RTrim,=,"")
+				F.Intrinsic.Control.If(V.Local.iIncr,<,10)
+					F.Intrinsic.String.Build("{0}-00{1}",V.DataTable.dtCuredMatl(V.Local.iCnt).JOB!FieldVal,V.Local.iIncr,V.Local.sHeat)
+				F.Intrinsic.Control.Else
+					F.Intrinsic.String.Build("{0}-0{1}",V.DataTable.dtCuredMatl(V.Local.iCnt).JOB!FieldVal,V.Local.iIncr,V.Local.sHeat)
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.Else
+				F.Intrinsic.Control.If(V.Local.iIncr,<,10)
+					F.Intrinsic.String.Build("{0}-{1}-00{2}",V.Local.sHeat,V.DataTable.dtCuredMatl(V.Local.iCnt).JOB!FieldVal,V.Local.iIncr,V.Local.sHeat)
+				F.Intrinsic.Control.Else
+					F.Intrinsic.String.Build("{0}-{1}-0{2}",V.Local.sHeat,V.DataTable.dtCuredMatl(V.Local.iCnt).JOB!FieldVal,V.Local.iIncr,V.Local.sHeat)
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.EndIf
+			'F.Intrinsic.String.Build("SELECT * FROM GCG_5862_KIT_MSTR WHERE PART = '{0}' AND LOCATION = '{1}' AND LOT = '{2}'  AND HEAT = '{3}'", v.Local.sPart.RTrim, V.Local.sLoc.RTrim, V.Local.sLot.RTrim, V.Local.sHeat.RTrim, V.Local.sSQL)
+			'F.Intrinsic.Control.If(v.DataTable.dtCured.Exists)
+				'F.Data.DataTable.Close("dtCured")
+			'F.Intrinsic.Control.EndIf
+			'F.Data.DataTable.CreateFromSQL("dtCured","con",V.Local.sSQL)
+			'F.Intrinsic.Control.If(V.DataTable.dtCured.RowCount--,>,-1)
+			F.Intrinsic.Control.If(V.DataTable.dtCuredFlag.Exists)
+				F.Data.DataTable.Close("dtCuredFlag")
+			F.Intrinsic.Control.EndIf
+			F.Intrinsic.String.Build("SELECT * FROM GCG_5862_KIT_MSTR WHERE PART = '{0}' AND LOCATION = '{1}' AND LOT = '{2}'  AND HEAT = '{3}'",v.Local.sPart,v.Local.sLoc,v.Local.sLot,V.Local.sHeat,v.Local.sSQL)
+			F.Data.DataTable.CreateFromSQL("dtCuredFlag","con",v.Local.sSQL)
+			
+			f.Intrinsic.Control.If(V.DataTable.dtCuredFlag.RowCount--,>,-1)
+				V.Local.sCuredFlag.Set(V.DataTable.dtCuredFlag(0).CURED!FieldVal)
+				v.Local.bCuredFlagNew.Set(V.DataTable.dtCuredFlag(0).CURED!FieldVal)
+			F.Intrinsic.Control.Else
+			V.Local.sCuredFlag.Set(0)
+			v.Local.bCuredFlagNew.Set(False)
+			f.Intrinsic.Control.EndIf
+			
+			'F.Intrinsic.Control.Else
+			F.Data.DataTable.AddRow("dtCuredMatl","JOB",V.DataTable.dtCuredMatl(v.Local.iCnt).JOB!FieldVal,"SUFFIX",V.DataTable.dtCuredMatl(v.Local.iCnt).SUFFIX!FieldVal,"SEQUENCE",V.DataTable.dtCuredMatl(v.Local.iCnt).SEQUENCE!FieldVal,"PART",v.Local.sPart,"LOCATION",v.Local.sLoc,"LOT",v.Local.sLot,"BIN",V.Local.sBin,"HEAT",V.Local.sHeat,"SERIAL_NUMBER",v.Local.sSerial,"QUANTITY",v.DataTable.dtCuredMatl(v.Local.iCnt).QUANTITY!FieldValFloat,"CURED",V.Local.bCuredFlagNew,"TOTAL_OT",v.DataTable.dtCuredMatl(v.Local.iCnt).TOTAL_OT!FieldValFloat,"COST",v.DataTable.dtCuredMatl(v.Local.iCnt).COST!FieldValFloat,"ALLOWABLE_OT",v.DataTable.dtCuredMatl(v.Local.iCnt).ALLOWABLE_OT!FieldValFloat,"DATE_DIFF",V.Local.sDateDiff,"QTY_REM",V.DataTable.dtCuredMatl(V.Local.iCnt).QTY_REM!FieldValFloat)
+			F.Data.DataTable.DeleteRow("dtCuredMatl",V.Local.iCnt)
+				
+				'F.Intrinsic.String.Build("INSERT INTO GCG_5862_KIT_MSTR (PART,LOCATION,LOT,HEAT,ALLOWABLE_OT,TOTAL_OT,CURED) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}',0)",V.Local.sPart.RTrim,V.Local.sLoc.RTrim,V.Local.sLot.RTrim,V.Local.sHeat.RTrim,V.Local.sAllow,V.Local.sTot,v.Local.sSQL)
+				'F.ODBC.Connection!con.Execute(V.Local.sSQL)
+				'F.Intrinsic.String.Build("INSERT INTO GCG_5862_EXP_TIME (PART,LOCATION,LOT,HEAT,TRANS_DATETIME,TRANS_ACTION,TRANS_DESCRIPTION,MANUAL_TIME,ADDED_DATETIME,ADDED_USER) VALUES ('{0}','{1}','{2}','{3}',CURDATE(),'CURED','CURED','{4}',CURTIME(),'{5}')",V.Local.sPart.RTrim,V.Local.sLoc.RTrim,V.Local.sLot.RTrim,V.Local.sHeat.RTrim,V.Local.sTot,V.Caller.User,v.Local.sSQL)
+				'F.ODBC.Connection!con.Execute(V.Local.sSQL)
+				'F.Intrinsic.String.Build("INSERT INTO ITEM_MASTER (PART,LOCATION,LOT,HEAT,BIN,SERIAL_NUMBER,QUANTITY) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}',0)",V.Local.sPart,V.Local.sLoc,V.Local.sLot,V.Local.sHeat,V.Local.sBin,V.Local.sSerial,v.Local.sSQL)
+				'F.ODBC.Connection!con.Execute(V.Local.sSQL)
+			'F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Else
+			F.Data.DataTable.SetValue("dtCuredMatl",V.Local.iCnt,"DATE_DIFF",V.Local.sDateDiff)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+	
+Program.Sub.UpdateCured.End
+
+Program.Sub.Serialize.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	V.Local.sSerialize.Declare
+	
+	'gvExpMgmt
+	Gui.FrmExpMgmt.GsGcExpMgmt.Serialize("gvExpMgmt",V.Local.sSerialize)
+	F.Global.Registry.AddValue(V.Caller.User,V.Caller.CompanyCode,"gvExpMgmt",5858,1000,False,"Serialize",False,0,-999.0,1/1/1980,12:00:00 AM,V.Local.sSerialize)
+
+	'gvManExp
+	'Gui.FrmManExp.GsGcManExp.Serialize("gvManExp",V.Local.sSerialize)
+	'F.Global.Registry.AddValue(V.Caller.User,V.Caller.CompanyCode,"gvManExp",5858,1000,False,"Serialize",False,0,-999.0,1/1/1980,12:00:00 AM,V.Local.sSerialize)
+	
+	'gvCreateKit
+	'Gui.FrmCreateKit.GsGcCreateKit.Serialize("gvCreateKit",V.Local.sSerialize)
+	'F.Global.Registry.AddValue(V.Caller.User,V.Caller.CompanyCode,"gvCreateKit",5858,1000,False,"Serialize",False,0,-999.0,1/1/1980,12:00:00 AM,V.Local.sSerialize)
+
+	'gvCuredMatl
+	'Gui.FrmCuredMatl.GsGcCuredMatl.Serialize("gvCuredMatl",V.Local.sSerialize)
+	'F.Global.Registry.AddValue(V.Caller.User,V.Caller.CompanyCode,"gvCuredMatl",5858,1000,False,"Serialize",False,0,-999.0,1/1/1980,12:00:00 AM,V.Local.sSerialize)
+	
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End
+	F.Intrinsic.Control.EndTry
+Program.Sub.Serialize.End
+
+Program.Sub.Deserialize.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	V.Local.sSerialize.Declare
+	
+	'Delete old registry records
+	F.Global.Registry.ReadValue(V.Caller.User,V.Caller.CompanyCode,"gvExpMgmt",5858,0,5,"",V.Local.sSerialize)
+	F.Intrinsic.Control.If(V.Local.sSerialize,<>,"")
+		F.ODBC.Connection!common.OpenConnection(V.Ambient.Ccon,V.Ambient.Cuser,V.Ambient.Cpass)
+		F.ODBC.Connection!common.Execute("Delete From Gs_Registry Where Reg_ID = 5858 And Seq < 1000;")
+		F.ODBC.Connection!common.Close
+	F.Intrinsic.Control.EndIf
+	
+	F.Global.Registry.ReadValue(V.Caller.User,V.Caller.CompanyCode, "gvExpMgmt",5858,1000,6,"",V.Local.sSerialize)
+	F.Intrinsic.Control.If(V.Local.sSerialize.Trim,<>,"")
+		GUI.FrmExpMgmt.GsGcExpMgmt.Deserialize(V.Local.sSerialize)
+	F.Intrinsic.Control.EndIf
+	
+	F.Global.Registry.ReadValue(V.Caller.User,V.Caller.CompanyCode,"gvManExp",5858,0,5,"",V.Local.sSerialize)
+	F.Intrinsic.Control.If(V.Local.sSerialize,<>,"")
+		F.ODBC.Connection!common.OpenConnection(V.Ambient.Ccon,V.Ambient.Cuser,V.Ambient.Cpass)
+		F.ODBC.Connection!common.Execute("Delete From Gs_Registry Where Reg_ID = 5858 And Seq < 1000;")
+		F.ODBC.Connection!common.Close
+	F.Intrinsic.Control.EndIf
+	
+	F.Global.Registry.ReadValue(V.Caller.User,V.Caller.CompanyCode, "gvMAnExp",5858,1000,6,"",V.Local.sSerialize)
+	F.Intrinsic.Control.If(V.Local.sSerialize.Trim,<>,"")
+		GUI.FrmManExp.GsGcManExp.Deserialize(V.Local.sSerialize)
+	F.Intrinsic.Control.EndIf
+	
+	F.Global.Registry.ReadValue(V.Caller.User,V.Caller.CompanyCode,"gvCreateKit",5858,0,5,"",V.Local.sSerialize)
+	F.Intrinsic.Control.If(V.Local.sSerialize,<>,"")
+		F.ODBC.Connection!common.OpenConnection(V.Ambient.Ccon,V.Ambient.Cuser,V.Ambient.Cpass)
+		F.ODBC.Connection!common.Execute("Delete From Gs_Registry Where Reg_ID = 5858 And Seq < 1000;")
+		F.ODBC.Connection!common.Close
+	F.Intrinsic.Control.EndIf
+	
+	F.Global.Registry.ReadValue(V.Caller.User,V.Caller.CompanyCode, "gvCreateKit",5858,1000,6,"",V.Local.sSerialize)
+	F.Intrinsic.Control.If(V.Local.sSerialize.Trim,<>,"")
+		GUI.FrmCreateKit.GsGcCreateKit.Deserialize(V.Local.sSerialize)
+	F.Intrinsic.Control.EndIf
+	
+	F.Global.Registry.ReadValue(V.Caller.User,V.Caller.CompanyCode,"gvCuredMatl",5858,0,5,"",V.Local.sSerialize)
+	F.Intrinsic.Control.If(V.Local.sSerialize,<>,"")
+		F.ODBC.Connection!common.OpenConnection(V.Ambient.Ccon,V.Ambient.Cuser,V.Ambient.Cpass)
+		F.ODBC.Connection!common.Execute("Delete From Gs_Registry Where Reg_ID = 5858 And Seq < 1000;")
+		F.ODBC.Connection!common.Close
+	F.Intrinsic.Control.EndIf
+	
+	F.Global.Registry.ReadValue(V.Caller.User,V.Caller.CompanyCode, "gvCuredMatl",5858,1000,6,"",V.Local.sSerialize)
+	F.Intrinsic.Control.If(V.Local.sSerialize.Trim,<>,"")
+		GUI.FrmCuredMatl.GsGcCuredMatl.Deserialize(V.Local.sSerialize)
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End
+	F.Intrinsic.Control.EndTry
+Program.Sub.Deserialize.End
+
+Program.Sub.MenuClickRefreshExp.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	Gui.FrmExpMgmt.lbl1.Visible(True)
+	
+	F.Intrinsic.Control.If(V.Global.bLoadData)
+		F.Intrinsic.Control.CallSub(Serialize)
+	F.Intrinsic.Control.EndIf	
+		
+	F.Intrinsic.Control.BlockEvents
+	
+	F.Intrinsic.Control.CallSub(LoadDtExpMgmt)
+	F.Intrinsic.Control.CallSub(Deserialize)
+	
+	F.Intrinsic.Control.UnBlockEvents
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.MenuClickRefreshExp.End
+
+Program.Sub.MenuClickRefreshMan.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	F.Intrinsic.Control.If(V.Global.bLoadData)
+		F.Intrinsic.Control.CallSub(Serialize)
+	F.Intrinsic.Control.EndIf	
+		
+	F.Intrinsic.Control.BlockEvents
+	F.Intrinsic.Control.If(V.Global.bUnload,=.True)
+		F.Intrinsic.Control.CallSub(LoadDtManExpBDF)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Control.CallSub(LoadDtManExp)
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.CallSub(Deserialize)
+	
+	F.Intrinsic.Control.UnBlockEvents
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.MenuClickRefreshMan.End
+
+Program.Sub.MenuClickRefreshKit.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	F.Intrinsic.Control.If(V.Global.bLoadData)
+		F.Intrinsic.Control.CallSub(Serialize)
+	F.Intrinsic.Control.EndIf	
+		
+	F.Intrinsic.Control.BlockEvents
+	
+	F.Intrinsic.Control.CallSub(LoadDtCreateKit)
+	F.Intrinsic.Control.CallSub(Deserialize)
+	
+	F.Intrinsic.Control.UnBlockEvents
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.MenuClickRefreshKit.End
+
+Program.Sub.MenuClickRefreshCure.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	F.Intrinsic.Control.If(V.Global.bLoadData)
+		F.Intrinsic.Control.CallSub(Serialize)
+	F.Intrinsic.Control.EndIf	
+		
+	F.Intrinsic.Control.BlockEvents
+	
+	F.Intrinsic.Control.CallSub(LoadDtCuredMatl)
+	F.Intrinsic.Control.CallSub(Deserialize)
+	
+	F.Intrinsic.Control.UnBlockEvents
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.MenuClickRefreshCure.End
+
+Program.Sub.MenuClickExportExp.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	V.Local.sForm.Declare(String, "FrmExpMgmt")
+	V.Local.sControl.Declare(String, "GsGcExpMgmt")
+	V.Local.sFileExport.Declare(String)
+	V.Local.sMsg.Declare(String)
+	V.Local.sDate.Declare(String)
+	V.Local.sTime.Declare(String)
+	V.Local.bExcel.Declare(Boolean)
+	V.Local.bFileLocked.Declare(Boolean)
+	
+	F.Automation.MSExcel.CheckPresence(V.Local.bExcel)
+	F.Intrinsic.String.DateString(V.Ambient.Date,V.Local.sDate)
+	F.Intrinsic.String.TimeString(V.Ambient.Time,V.Local.sTime)
+	F.Intrinsic.Control.If(V.Local.bExcel)
+		F.Intrinsic.String.Build("{0}\GCG_5862_EXPOSURE_GRID_{1}_Export_{2}_{3}.xlsx",V.Caller.LocalGSSTempDir,V.Local.sControl,V.Local.sDate,V.Local.sTime,V.Local.sFileExport)
+		F.Intrinsic.File.IsFileLocked(V.Local.sFileExport,V.Local.bFileLocked)
+		F.Intrinsic.Control.If(V.Local.bFileLocked)
+			F.Intrinsic.String.Build("File is already open. Please close and export again.{0}File : {1}",V.Ambient.NewLine,V.Local.sFileExport,V.Local.sMsg)
+			F.Intrinsic.UI.Msgbox(V.Local.sMsg,"File In Use")
+		F.Intrinsic.Control.Else
+			Gui.[V.Local.sForm].[V.Local.sControl].Export(V.Local.sFileExport,"xlsx")
+			F.Intrinsic.Task.ShellExec(0,"",V.Local.sFileExport,"","",1)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Else
+		F.Intrinsic.String.Build("{0}\GCG_5862_EXPOSURE_GRID_{1}_Export_{2}_{3}.csv",V.Caller.LocalGssTempDir,V.Local.sControl,V.Local.sDate,V.Local.sTime,V.Local.sFileExport)
+		F.Intrinsic.File.IsFileLocked(V.Local.sFileExport,V.Local.bFileLocked)
+		F.Intrinsic.Control.If(V.Local.bFileLocked)
+			F.Intrinsic.String.Build("File is already open. Please close and export again.{0}File: {1}",V.Ambient.NewLine,V.Local.sFileExport,V.Local.sMsg)
+			F.Intrinsic.UI.Msgbox(V.Local.sMsg,"File In Use")
+		F.Intrinsic.Control.Else
+			Gui.[V.Local.sForm].[V.Local.sControl].Export(V.Local.sFileExport,"csv")
+		F.Intrinsic.Control.EndIf
+		F.Intrinsic.Task.ShellExec(0,"",V.Local.sFileExport,"","",1)
+	F.Intrinsic.Control.EndIf
+
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End
+	F.Intrinsic.Control.EndTry
+Program.Sub.MenuClickExportExp.End
+
+Program.Sub.GsGcCuredMatl_RowCellClick.Start
+F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	V.Local.iRet.Declare
+	V.Local.sSQL.Declare
+	V.Local.sCured.Declare
+	V.Local.sPart.Declare
+	V.Local.sLoc.Declare
+	V.Local.sLot.Declare
+	V.Local.sHeat.Declare
+	v.Local.sBin.Declare
+	V.Local.sDateNow.Declare
+	V.Local.sDate.Declare
+	V.Local.sDateDiff.Declare
+	V.Local.sQtyRem.Declare
+	V.Local.sTot.Declare
+	V.Local.sAllow.Declare
+	v.Local.bGroup.Declare
+	'Function.Intrinsic.Debug.Stop
+	v.Local.fAllowTime.Declare
+	v.Local.sSingleHeat.Declare
+
+	F.Intrinsic.Control.SelectCase(V.Args.Column.UCase)
+
+
+	
+		F.Intrinsic.Control.Case("CURED")
+			f.Intrinsic.UI.InvokeWaitDialog("Curing...")
+			Gui.FrmCuredMatl.GsGcCuredMatl.GetCellValueByColumnName("gvCuredMatl","CURED",v.Args.RowIndex,V.Local.iRet)
+			Gui.FrmCuredMatl.GsGcCuredMatl.GetCellValueByColumnName("gvCuredMatl","PART",v.Args.RowIndex,V.Local.sPart)
+			Gui.FrmCuredMatl.GsGcCuredMatl.GetCellValueByColumnName("gvCuredMatl","LOCATION",v.Args.RowIndex,V.Local.sLoc)
+			Gui.FrmCuredMatl.GsGcCuredMatl.GetCellValueByColumnName("gvCuredMatl","LOT",v.Args.RowIndex,V.Local.sLot)
+			Gui.FrmCuredMatl.GsGcCuredMatl.GetCellValueByColumnName("gvCuredMatl","HEAT",v.Args.RowIndex,V.Local.sHeat)
+			V.Local.sQtyRem.Set(V.DataTable.dtCuredMatl(V.Args.RowIndex).QTY_REM!FieldValFloat)
+			
+			F.Intrinsic.Control.If(v.Local.iRet,=,1)
+
+				'Check Security Level
+				f.Global.Security.IsInGroup(v.Caller.User, "QUALITY", v.Caller.CompanyCode, v.Local.bGroup)
+				f.Intrinsic.Control.If(v.Local.bGroup.Not)
+					f.Intrinsic.UI.Msgbox("You are not allowed to undo a Curing, please contact an Administrator")
+					gui.FrmCuredMatl.GsGcCuredMatl.SetCellValueByColumnName("gvCuredMatl","CURED",v.Args.RowIndex, True)
+					f.Intrinsic.UI.CloseWaitDialog
+					F.Intrinsic.Control.ExitSub
+				f.Intrinsic.Control.EndIf
+				
+				f.Intrinsic.String.Split(v.Local.sHeat.RTrim, "-", v.Local.sSingleHeat)
+				F.Intrinsic.String.Build("SELECT * FROM GCG_5862_KIT_MSTR WHERE PART = '{0}' AND LOCATION = '{1}' AND LOT = '{2}'  AND HEAT = '{3}'", v.Local.sPart.RTrim, V.Local.sLoc.RTrim, V.Local.sLot.RTrim, V.Local.sSingleHeat(0).RTrim, V.Local.sSQL)
+				F.Intrinsic.Control.If(v.DataTable.dtCured.Exists)
+					F.Data.DataTable.Close("dtCured")
+				F.Intrinsic.Control.EndIf
+				F.Data.DataTable.CreateFromSQL("dtCured","con",V.Local.sSQL)
+				
+				v.Global.bAcceptTime.Set(False)
+				
+				gui.FrmAcceptTime.txtOT.Text(V.DataTable.dtCuredMatl(V.Args.RowIndex).TOTAL_OT!FieldValFLoat)
+				gui.FrmAcceptTime..Show
+				
+				f.Intrinsic.Control.DoUntil(v.Global.bAcceptTime)
+					
+				f.Intrinsic.Control.Loop
+				
+				v.Local.sTot.Set(v.Screen.FrmAcceptTime!txtOT.Text)
+				
+
+				
+				F.Intrinsic.String.Build("UPDATE GCG_5862_KIT_MSTR SET TOTAL_OT = '{0}' WHERE PART = '{1}' AND LOCATION = '{2}' AND LOT = '{3}'  AND HEAT = '{4}'",v.Local.sTot,v.DataTable.dtCuredMatl(V.Args.RowIndex).PART!FieldValTrim,v.DataTable.dtCuredMatl(v.Args.RowIndex).LOCATION!FieldValTrim,v.DataTable.dtCuredMatl(v.Args.RowIndex).LOT!FieldValTrim, V.Local.sSingleHeat(0),V.Local.sSQL)
+				F.ODBC.Connection!con.Execute(V.Local.sSQL)
+				
+				f.Intrinsic.String.Build("Delete From GCG_5862_KIT_MSTR  WHERE PART = '{0}' AND LOCATION = '{1}' AND LOT = '{2}'  AND HEAT = '{3}'", v.DataTable.dtCuredMatl(V.Args.RowIndex).PART!FieldValTrim,v.DataTable.dtCuredMatl(v.Args.RowIndex).LOCATION!FieldValTrim,v.DataTable.dtCuredMatl(v.Args.RowIndex).LOT!FieldValTrim,v.DataTable.dtCuredMatl(v.Args.RowIndex).HEAT!FieldValTrim,V.Local.sSQL)
+				F.ODBC.Connection!con.Execute(V.Local.sSQL)
+				
+				f.Intrinsic.String.Build("Delete From GCG_5862_EXP_TIME  WHERE PART = '{0}' AND LOCATION = '{1}' AND LOT = '{2}'  AND HEAT = '{3}'", v.DataTable.dtCuredMatl(V.Args.RowIndex).PART!FieldValTrim,v.DataTable.dtCuredMatl(v.Args.RowIndex).LOCATION!FieldValTrim,v.DataTable.dtCuredMatl(v.Args.RowIndex).LOT!FieldValTrim,v.DataTable.dtCuredMatl(v.Args.RowIndex).HEAT!FieldValTrim,V.Local.sSQL)
+				F.ODBC.Connection!con.Execute(V.Local.sSQL)
+				
+				f.Intrinsic.String.Build("Delete From ITEM_MASTER  WHERE PART = '{0}' AND LOCATION = '{1}' AND LOT = '{2}'  AND HEAT = '{3}'", v.DataTable.dtCuredMatl(V.Args.RowIndex).PART!FieldValTrim,v.DataTable.dtCuredMatl(v.Args.RowIndex).LOCATION!FieldValTrim,v.DataTable.dtCuredMatl(v.Args.RowIndex).LOT!FieldValTrim,v.DataTable.dtCuredMatl(v.Args.RowIndex).HEAT!FieldValTrim,V.Local.sSQL)
+				F.ODBC.Connection!con.Execute(V.Local.sSQL)
+				'F.Intrinsic.String.Build("INSERT INTO GCG_5862_EXP_TIME (PART,LOCATION,LOT,HEAT,TRANS_DATETIME,TRANS_ACTION,TRANS_DESCRIPTION,MANUAL_TIME,ADDED_DATETIME,ADDED_USER) VALUES ('{0}','{1}','{2}','{3}',CURDATE(),'CURED','CURED','{4}',CURTIME(),'{5}')",V.Local.sPart.RTrim,V.Local.sLoc.RTrim,V.Local.sLot.RTrim,V.Local.sHeat.RTrim,V.Local.sDateDiff,V.Caller.User,v.Local.sSQL)
+				
+				Gui.FrmCuredMatl.GsGcCuredMatl.SetCellValueByColumnName("gvCuredMatl","CURED",V.Args.RowIndex,False)
+			F.Intrinsic.Control.Else
+			F.Intrinsic.Math.Add(V.DataTable.dtCuredMatl(V.Args.RowIndex).TOTAL_OT!FieldValFLoat,V.DataTable.dtCuredMatl(V.Args.RowIndex).DATE_DIFF!FieldValFLoat,v.Local.sTot)
+			V.Local.sDateDiff.Set(V.DataTable.dtCuredMatl(V.Args.RowIndex).DATE_DIFF!FieldValFLoat)
+			v.Local.sAllow.Set(V.DataTable.dtCuredMatl(V.Args.RowIndex).ALLOWABLE_OT!FieldValFLoat)
+			F.Intrinsic.String.Build("SELECT * FROM GCG_5862_KIT_MSTR WHERE PART = '{0}' AND LOCATION = '{1}' AND LOT = '{2}'  AND HEAT = '{3}'", v.Local.sPart.RTrim, V.Local.sLoc.RTrim, V.Local.sLot.RTrim, V.Local.sHeat.RTrim, V.Local.sSQL)
+			F.Intrinsic.Control.If(v.DataTable.dtCured.Exists)
+				F.Data.DataTable.Close("dtCured")
+			F.Intrinsic.Control.EndIf
+			F.Data.DataTable.CreateFromSQL("dtCured","con",V.Local.sSQL)
+				F.Intrinsic.Control.If(V.DataTable.dtCured.RowCount--,>,-1)
+					Gui.FrmCuredMatl.GsGcCuredMatl.SetCellValueByColumnName("gvCuredMatl","CURED",V.Args.RowIndex,True)
+					V.Local.sCured.Set(1)
+					F.Intrinsic.String.Build("UPDATE GCG_5862_KIT_MSTR SET CURED = '{0}' WHERE PART = '{1}' AND LOCATION = '{2}' AND LOT = '{3}'  AND HEAT = '{4}'",v.Local.sCured,v.DataTable.dtCuredMatl(V.Args.RowIndex).PART!FieldValTrim,v.DataTable.dtCuredMatl(v.Args.RowIndex).LOCATION!FieldValTrim,v.DataTable.dtCuredMatl(v.Args.RowIndex).LOT!FieldValTrim,v.DataTable.dtCuredMatl(v.Args.RowIndex).HEAT!FieldValTrim,V.Local.sSQL)
+					F.ODBC.Connection!con.Execute(V.Local.sSQL)
+					F.Intrinsic.String.Build("UPDATE GCG_5862_KIT_MSTR SET TOTAL_OT = '{0}' WHERE PART = '{1}' AND LOCATION = '{2}' AND LOT = '{3}'  AND HEAT = '{4}'",v.Local.sTot,v.DataTable.dtCuredMatl(V.Args.RowIndex).PART!FieldValTrim,v.DataTable.dtCuredMatl(v.Args.RowIndex).LOCATION!FieldValTrim,v.DataTable.dtCuredMatl(v.Args.RowIndex).LOT!FieldValTrim,v.DataTable.dtCuredMatl(v.Args.RowIndex).HEAT!FieldValTrim,V.Local.sSQL)
+					F.ODBC.Connection!con.Execute(V.Local.sSQL)
+					F.Intrinsic.String.Build("INSERT INTO GCG_5862_EXP_TIME (PART,LOCATION,LOT,HEAT,TRANS_DATETIME,TRANS_ACTION,TRANS_DESCRIPTION,MANUAL_TIME,ADDED_DATETIME,ADDED_USER) VALUES ('{0}','{1}','{2}','{3}',CURDATE(),'CURED','CURED','{4}',CURTIME(),'{5}')",V.Local.sPart.RTrim,V.Local.sLoc.RTrim,V.Local.sLot.RTrim,V.Local.sHeat.RTrim,V.Local.sDateDiff,V.Caller.User,v.Local.sSQL)
+					F.ODBC.Connection!con.Execute(V.Local.sSQL)
+				F.Intrinsic.Control.Else
+					Gui.FrmCuredMatl.GsGcCuredMatl.SetCellValueByColumnName("gvCuredMatl","CURED",V.Args.RowIndex,True)
+					V.Local.sCured.Set(1)
+					F.Intrinsic.String.Build("INSERT INTO GCG_5862_KIT_MSTR (PART,LOCATION,LOT,HEAT,ALLOWABLE_OT,TOTAL_OT,CURED) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}',1)",V.Local.sPart.RTrim,V.Local.sLoc.RTrim,V.Local.sLot.RTrim,V.Local.sHeat.RTrim,V.Local.sAllow,V.Local.sTot,v.Local.sSQL)
+					F.ODBC.Connection!con.Execute(V.Local.sSQL)
+					F.Intrinsic.String.Build("INSERT INTO GCG_5862_EXP_TIME (PART,LOCATION,LOT,HEAT,TRANS_DATETIME,TRANS_ACTION,TRANS_DESCRIPTION,MANUAL_TIME,ADDED_DATETIME,ADDED_USER) VALUES ('{0}','{1}','{2}','{3}',CURDATE(),'CURED','CURED','{4}',CURTIME(),'{5}')",V.Local.sPart.RTrim,V.Local.sLoc.RTrim,V.Local.sLot.RTrim,V.Local.sHeat.RTrim,V.Local.sTot,V.Caller.User,v.Local.sSQL)
+					F.ODBC.Connection!con.Execute(V.Local.sSQL)
+					F.Intrinsic.String.Build("INSERT INTO ITEM_MASTER (PART,LOCATION,LOT,HEAT,BIN,SERIAL_NUMBER,QUANTITY) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}',0)",V.Local.sPart,V.Local.sLoc,V.Local.sLot,V.Local.sHeat,V.Local.sBin,V.DataTable.dtCuredMatl(V.Args.RowIndex).SERIAL_NUMBER!FieldVal,v.Local.sSQL)
+					F.ODBC.Connection!con.Execute(V.Local.sSQL)
+				F.Intrinsic.Control.EndIf
+				
+			F.Intrinsic.Control.EndIf
+			f.Intrinsic.UI.CloseWaitDialog
+		F.Intrinsic.Control.EndSelect	
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End 
+F.Intrinsic.Control.EndTry
+Program.Sub.GsGcCuredMatl_RowCellClick.End
+
+Program.Sub.cmd1AcceptOT_Click.Start
+f.Intrinsic.Control.Try
+	gui.FrmAcceptTime..Visible(false)
+	gui.FrmAcceptTime..Enabled(false)
+	v.Global.bAcceptTime.Set(true)
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.cmd1AcceptOT_Click.End
+
+Program.Sub.FrmAcceptTime_UnLoad.Start
+f.Intrinsic.Control.Try
+	gui.FrmAcceptTime..Visible(false)
+	gui.FrmAcceptTime..Enabled(false)
+	v.Global.bAcceptTime.Set(true)
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+f.Intrinsic.Control.EndTry
+Program.Sub.FrmAcceptTime_UnLoad.End
+
+Program.Sub.ErrorMsg.Start
+v.Local.sError.Declare
+
+'Closes ODBC connection, default to connection : "con"
+f.Intrinsic.Control.If(v.ODBC!con.State, =, 1)
+	f.ODBC.Connection!con.Close
+f.Intrinsic.Control.EndIf
+
+'Generic Error message.
+f.Intrinsic.String.Build("Project ProjectName.g2u {0}{0}Subroutine: {1}{0}Error: {2} with Description: {3}", v.Ambient.NewLine, v.Args.CurrentSub, v.Ambient.ErrorNumber, v.Ambient.ErrorDescription, v.Local.sError)
+f.Intrinsic.UI.Msgbox(v.Local.sError)
+Program.Sub.ErrorMsg.End
+
+Program.Sub.Comments.Start
+${$5$}$2.0.0.0$}$2
+${$6$}$aanazco$}$20231212150220535$}$7aQAV3Tor/tR9bkuakHbuzQlHVuXCGOzeXcdTIiouoSs+sYwAyVVBp8NPg46WqVjanjSexpmCzA=
+Program.Sub.Comments.End
