@@ -1,0 +1,212 @@
+Program.Sub.ScreenSU.Start
+Gui.FrmFreezerBin..Create
+Gui.FrmFreezerBin..Caption("Freezer Bin")
+Gui.FrmFreezerBin..Size(15240,10440)
+Gui.FrmFreezerBin..MinX(15240)
+Gui.FrmFreezerBin..MinY(10440)
+Gui.FrmFreezerBin..Position(0,0)
+Gui.FrmFreezerBin..BackColor(-2147483633)
+Gui.FrmFreezerBin..MousePointer(0)
+Gui.FrmFreezerBin..Event(UnLoad,FrmFreezerBin_UnLoad)
+Gui.FrmFreezerBin.GsGcFreezerBin.Create(GsGridControl)
+Gui.FrmFreezerBin.GsGcFreezerBin.Size(15150,8925)
+Gui.FrmFreezerBin.GsGcFreezerBin.Position(0,1230)
+Gui.FrmFreezerBin.GsGcFreezerBin.Anchor(15)
+Gui.FrmFreezerBin.GsGcFreezerBin.Event(CellValueChanged,GsGcFreezerBin_CellValueChanged)
+Gui.FrmFreezerBin.picGSSLogo.Create(PictureBox)
+Gui.FrmFreezerBin.picGSSLogo.Size(4200,1005)
+Gui.FrmFreezerBin.picGSSLogo.Position(5520,135)
+Gui.FrmFreezerBin.picGSSLogo.Anchor(1)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+	V.Global.bLoadData.Declare
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	V.Local.sGSSLogo.Declare
+	V.Local.sIcon.Declare
+	
+	F.Intrinsic.String.Build("{0}\GAB\GAS\gss2.ico",V.Caller.PluginsDir,v.Local.sIcon)
+	F.Intrinsic.String.Build("{0}\GAB\GAS\GAB_GSS_Logo_Green_Dash.png",V.Caller.PluginsDir,V.Local.sGssLogo)
+	Gui.FrmFreezerBin.picGSSLogo.Picture(V.Local.sGSSLogo)
+	Gui.FrmFreezerBin..Icon(V.Local.sIcon)	
+	
+	F.ODBC.Connection!con.OpenCompanyConnection
+	
+	F.Intrinsic.Control.CallSub(CheckTable)
+	'F.Intrinsic.Control.CallSub(SetContextMenus)
+	
+	F.Intrinsic.Control.CallSub(LoaddtFreeze)
+	
+			gui.FrmFreezerBin..Show
+	F.Intrinsic.Control.EndSelect
+	
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.Main.End
+
+Program.Sub.CheckTable.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	V.Local.sSQL.Declare
+	V.Local.bBin.Declare
+	V.Local.bKit.Declare
+	V.Local.bExp.Declare
+		
+	F.ODBC.Connection!con.TableExists("GCG_5862_FREEZER_BIN",V.Local.bBin)
+	
+	F.Intrinsic.Control.If(V.Local.bBin,=,False)
+		F.ODBC.Connection!con.Execute("CREATE TABLE GCG_5862_FREEZER_BIN (BIN CHAR(6) NOT NULL, LOCATION CHAR(2), IS_FREEZER BIT)")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.CheckTable.End
+
+Program.Sub.FrmFreezerBin_UnLoad.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	F.ODBC.Connection!con.Close
+	F.Intrinsic.Control.End
+
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.FrmFreezerBin_UnLoad.End
+
+Program.Sub.LoadDtFreeze.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+
+	V.Local.sSQL.Declare
+	
+	F.Intrinsic.Control.If(V.DataTable.dtFreeze.Exists)
+		F.Data.DataTable.Close("dtFreeze")
+	F.Intrinsic.Control.EndIf
+	
+	V.Global.bLoadData.Set(True)
+	
+	F.Data.DataTable.CreateFromSQL("dtFreeze","con","SELECT LTRIM(RTRIM(A.BIN)) AS BIN, LTRIM(RTRIM(A.LOCATION)) AS LOCATION, A.BIN_DESCRIPTION, (CASE WHEN B.IS_FREEZER IS NULL THEN CAST(0 AS BIT) ELSE CAST(B.IS_FREEZER AS BIT) END) AS FREEZER FROM BIN_MASTER A LEFT JOIN GCG_5862_FREEZER_BIN B ON A.BIN = B.BIN AND A.LOCATION = B.LOCATION",True)
+	
+	f.Intrinsic.Control.CallSub(LoadFreezerBinGV)
+	
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.LoadDtFreeze.End
+
+Program.Sub.LoadFreezerBinGV.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+		
+	Gui.FrmFreezerBin.GsGcFreezerBin.AddGridviewFromDatatable("gvFreeze","dtFreeze")
+	Gui.FrmFreezerBin.GsGcFreezerBin.SuspendLayout()
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetGridviewProperty("gvFreeze","AllowSort",True)
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetGridviewProperty("gvFreeze","AllowFilter",True)
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetGridviewProperty("gvFreeze","OptionsViewShowGroupPanel",True)
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetGridviewProperty("gvFreeze","EnableAppearanceOddRow",True)
+	Gui.FrmFreezerBin.GsGcFreezerBin.BestFitColumns("gvFreeze")
+	
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","FREEZER","Caption","Freezer Bin")
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","FREEZER","HeaderHAlignment","Center")
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","FREEZER","HeaderFontBold",True)
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","FREEZER","MinWidth","85")
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","FREEZER","AllowEdit",True)
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","FREEZER","ReadOnly",False)
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","FREEZER","CellBackColor","LightYellow")
+	
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","BIN","Caption","Bin")
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","BIN","HeaderHAlignment","Center")
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","BIN","HeaderFontBold",True)
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","BIN","MinWidth","85")
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","BIN","AllowEdit",False)
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","BIN","ReadOnly",True)
+
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","LOCATION","Caption","Location")
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","LOCATION","HeaderHAlignment","Center")
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","LOCATION","HeaderFontBold",True)
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","LOCATION","MinWidth","85")
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","LOCATION","AllowEdit",False)
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","LOCATION","ReadOnly",True)
+	
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","BIN_DESCRIPTION","Caption","Bin Description")
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","BIN_DESCRIPTION","HeaderHAlignment","Center")
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","BIN_DESCRIPTION","HeaderFontBold",True)
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","BIN_DESCRIPTION","MinWidth","85")
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","BIN_DESCRIPTION","AllowEdit",False)
+	Gui.FrmFreezerBin.GsGcFreezerBin.SetColumnProperty("gvFreeze","BIN_DESCRIPTION","ReadOnly",True)
+
+	Gui.FrmFreezerBin.GsGcFreezerBin.ResumeLayout()
+	Gui.FrmFreezerBin.GsGcFreezerBin.MainView("gvFreeze")
+
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.LoadFreezerBinGV.End
+
+Program.Sub.GsGcFreezerBin_CellValueChanged.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	V.Local.sSQL.Declare
+	V.Local.sBin.Declare
+	V.Local.sLoc.Declare
+	V.Local.sRet.Declare
+	V.Local.sFreeze.Declare
+	
+	F.Intrinsic.Control.If(V.DataTable.dtExists.Exists)
+		F.Data.DataTable.Close("dtExists")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.BlockEvents
+	
+	F.Intrinsic.Control.SelectCase(V.Args.Column)
+		F.Intrinsic.Control.Case("FREEZER")
+			Gui.FrmFreezerBin.GsGcFreezerBin.GetCellValueByColumnName("gvFreeze", "FREEZER", V.Args.RowIndex, V.Local.sRet)
+			F.Intrinsic.Control.If(V.Local.sRet,=,True)
+				Gui.FrmFreezerBin.GsGcFreezerBin.SetCellValueByColumnName("gvFreeze","FREEZER",V.Args.RowIndex, False)
+				V.Local.sFreeze.Set(0)
+			F.Intrinsic.Control.Else
+				Gui.FrmFreezerBin.GsGcFreezerBin.SetCellValueByColumnName("gvFreeze","FREEZER",V.Args.RowIndex, True)
+				V.Local.sFreeze.Set(1)
+			F.Intrinsic.Control.EndIf
+			V.Local.sBin.Set(V.DataTable.dtFreeze(V.Args.RowIndex).BIN!FieldVal)
+			V.Local.sLoc.Set(V.DataTable.dtFreeze(V.Args.RowIndex).LOCATION!FieldVal)
+			'V.Local.sFreeze.Set(V.DataTable.dtFreeze(V.Args.RowIndex).FREEZER!FieldVal)
+			F.Intrinsic.String.Build("SELECT * FROM GCG_5862_FREEZER_BIN WHERE BIN = '{0}' AND LOCATION  = '{1}'",v.Local.sBin,V.Local.sLoc,V.Local.sSQL)
+			F.Data.DataTable.CreateFromSQL("dtExists","con",V.Local.sSQL,True)
+			F.Intrinsic.Control.If(V.DataTable.dtExists.RowCount--,>,-1)
+				F.Intrinsic.String.Build("UPDATE GCG_5862_FREEZER_BIN SET IS_FREEZER = '{2}' WHERE BIN = '{0}' AND LOCATION  = '{1}'",v.Local.sBin,V.Local.sLoc,v.Local.sFreeze,V.Local.sSQL)
+				F.ODBC.Connection!con.Execute(V.Local.sSQL)
+			F.Intrinsic.Control.Else
+				F.Intrinsic.String.Build("INSERT INTO GCG_5862_FREEZER_BIN (BIN,LOCATION,IS_FREEZER) VALUES ('{0}','{1}','{2}')",v.Local.sBin,V.Local.sLoc,v.Local.sFreeze,V.Local.sSQL)
+				F.ODBC.Connection!con.Execute(V.Local.sSQL)
+			F.Intrinsic.Control.EndIf
+			F.Data.DataTable.Close("dtExists")
+	F.Intrinsic.Control.EndSelect
+	
+	F.Intrinsic.Control.UnBlockEvents
+	
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.GsGcFreezerBin_CellValueChanged.End
